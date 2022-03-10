@@ -1,0 +1,287 @@
+
+.container__form-application {
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 29, 37, 0.7);
+  display: none;
+  overflow: scroll;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+}
+.form-application__cross{
+  position: absolute;
+  z-index: 51;
+  top: 0.83vw;
+  right: 1.145vw;
+  width: 0.83vw;
+  height: 0.83vw;
+  color: #1C1D25;
+}
+.form-application__cross-img{
+  width: 100%;
+  height: 100%;
+}
+.form-application__img{
+  width: 100%;
+  height: 100%;
+}
+.form-application__block {
+  width: 22.97vw;
+  background: #FBFCF7;
+  -webkit-box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+  box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.83vw 1.04vw 1.25vw 1.04vw;
+  position: absolute;
+  left: 40%;
+  top: 25%;
+}
+
+.form-application__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 2.92vw;
+  height: 2.92vw;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 0.416vw;
+}
+
+.form-application__img {
+  width: 100%;
+  height: 100%;
+}
+
+.form-application__text-wrapper {
+  margin-bottom: 0.83vw;
+}
+
+.form-application__text {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25vw;
+  line-height: 1.61vw;
+  text-align: center;
+  color: #1C1D25;
+  margin-bottom: 0.42vw;
+  word-break: break-word;
+}
+
+.form-application__name-course {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.83vw;
+  line-height: 120%;
+  text-align: center;
+  color: #1C1D25;
+  word-break: break-word;
+}
+
+.form-application__form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form-application__input {
+  display: block;
+  border: 1px solid #C5C5C5;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  color: #000000;
+  width: 17.29vw;
+  padding: 0.94vw;
+  margin-bottom: 0.83vw;
+}
+
+.form-application__button {
+  background: #B00D23;
+  border-radius: 5px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  color: #FFFFFF;
+  padding: 0.83vw 1.66vw;
+}
+
+@media screen and (max-width: 1366px) {
+  .form-application__block {
+    width: 32.28vw;
+    padding: 1.171vw 1.464vw 1.757vw 1.464vw;
+    left: 40%;
+    top: 17%;
+  }
+  .form-application__cross{
+    top: 1.2vw;
+    right: 1.6vw;
+    width: 1.171vw;
+    height: 1.171vw;
+  }
+  .form-application__image {
+    width: 4.1vw;
+    height: 4.1vw;
+    margin-bottom: 0.59vw;
+  }
+  .form-application__text-wrapper {
+    margin-bottom: 1.171vw;
+  }
+  .form-application__text {
+    font-size: 1.757vw;
+    line-height: 2.27vw;
+    margin-bottom: 0.59vw;
+  }
+  .form-application__name-course {
+    font-size: 1.171vw;
+  }
+  .form-application__input {
+    font-size: 1.171vw;
+    line-height: 1.54vw;
+    width: 24.30vw;
+    padding: 1.32vw;
+    margin-bottom: 1.171vw;
+  }
+  .form-application__button {
+    font-size: 1.171vw;
+    line-height: 1.54vw;
+    padding: 1.171vw 2.342vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container__form-application {
+    padding: 15vw 2.22vw 15vw 2.22vw;
+  }
+  .form-application__cross{
+    top: 4.3vw;
+    right: 3.3vw;
+    width: 4.44vw;
+    height: 4.44vw;
+  }
+  .form-application__block {
+    width: 100%;
+    position: relative;
+    padding: 4.44vw 4.44vw 6.66vw 4.44vw;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+  }
+  .form-application__image {
+    width: 15vw;
+    height: 15vw;
+    margin-bottom: 2.22vw;
+  }
+  .form-application__text-wrapper {
+    margin-bottom: 6.66vw;
+  }
+  .form-application__text {
+    font-size: 6.66vw;
+    line-height: 8.61vw;
+    margin-bottom: 2.22vw;
+  }
+  .form-application__name-course {
+    font-size: 4.44vw;
+  }
+  form {
+    width: 100%;
+  }
+  .form-application__input {
+    font-size: 4.44vw;
+    line-height: 5.83vw;
+    width: 100%;
+    padding: 5.83vw;
+    margin-bottom: 4.44vw;
+  }
+  .form-application__button {
+    font-size: 4.44vw;
+    line-height: 5.83vw;
+    padding: 4.44vw 8.88vw;
+  }
+}
+
+/* @media (orientation: landscape) and (min-width: 640px) and (max-width: 737px) {
+  .container__form-application {
+    padding: 4vw 2.22vw 2vw 2.22vw;
+  }
+  .form-application__cross{
+    top: 3vw;
+    right: 3vw;
+    width: 3.44vw;
+    height: 3.44vw;
+  }
+  .form-application__block {
+    width: 70%;
+    position: relative;
+    padding: 2.44vw 2.44vw 3.66vw 2.44vw;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+  }
+  .form-application__image {
+    width: 7vw;
+    height: 5vw;
+    margin-bottom: 1.22vw;
+  }
+  .form-application__text-wrapper {
+    margin-bottom: 2.66vw;
+  }
+  .form-application__text {
+    font-size: 3.66vw;
+    line-height: 2vw;
+    margin-bottom: 2vw;
+  }
+  .form-application__name-course {
+    font-size: 2.2vw;
+  }
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-application__input {
+    font-size: 2vw;
+    line-height: 3vw;
+    width: 70%;
+    padding: 1.5vw;
+    margin-bottom: 2vw;
+  }
+  .form-application__button {
+    font-size: 2vw;
+    line-height: 2.83vw;
+    padding: 2vw 3vw;
+  }
+} */

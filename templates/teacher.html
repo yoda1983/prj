@@ -1,0 +1,97 @@
+{% extends 'main.html' %}
+{% load static %}
+
+    {% block title %}
+    <title>
+        Обучение программированию профессионалами своего дела в онлайн и офлайн режиме, индивидуальные занятия.
+    </title>
+    <meta name="description" content="Обучение ведут лучшие разработчики из IT компаний СНГ и Европы с огромным  опытом преподавания">
+    <meta name="keywords" content="Обучение программированию, преподователь по JS, преподаватель по Python, выучить программирование">
+    {% endblock %}
+
+    {% block css %}
+    <link rel="icon" href="{% static 'img/teacher__white.svg' %}">
+    <link rel="stylesheet" href="{% static 'css/teacher.css' %}">
+    <link rel="stylesheet" href="{% static 'css/menu_for_teacher.css' %}">
+    {% endblock %}
+
+    {% block content %}
+    <div class="teacher" id="content">
+        <h1 class="teacher__title">
+            Все преподаватели - разработчики из лучших IT-компаний СНГ и Европы с опытом преподавания
+        </h1>
+        <h2 class="teacher__subtitle">
+            Знаем как донести понятным языком сложный материал. Учиться с нами интересно!
+        </h2>
+        <div class="teacher__container">
+            <div class="teacher__card">
+                <div class="teacher__card-img-wrapper">
+                    <img src="{% static 'img/alexei_full_teacher.jpg' %}" alt="" class="teacher__card-img">
+                </div>
+                <div class="teacher__card-name">
+                    Алексей Юнчиц
+                </div>
+                <div class="teacher__card-line">
+
+                </div>
+                <div class="teacher__card-work-name">
+                    Full Stack Developer <span>Блок «JavaScript Essential»</span><span>Блок «Advanced Pethon/Django»</span>
+                </div>
+                <div class="teacher__card-experience">
+                    Опыт преподавания : 12 лет
+                </div>
+            </div>
+            <div class="teacher__card">
+                <div class="teacher__card-img-wrapper">
+                    <img src="{% static 'img/alexei_teacher.jpg' %}" alt="" class="teacher__card-img">
+                </div>
+                <div class="teacher__card-name">
+                    Алексей Гришаев
+                </div>
+                <div class="teacher__card-line">
+
+                </div>
+                <div class="teacher__card-work-name">
+                    Python Developer<span>Блок «Python Essential»</span>
+                </div>
+                <div class="teacher__card-experience">
+                    Опыт преподавания : 2 года
+                </div>
+            </div>
+            <div class="teacher__card">
+                <div class="teacher__card-img-wrapper">
+                    <img src="{% static 'img/roman_teacher.jpg' %}" alt="" class="teacher__card-img">
+                </div>
+                <div class="teacher__card-name">
+                    Роман Фищенко
+                </div>
+                <div class="teacher__card-line">
+
+                </div>
+                <div class="teacher__card-work-name">
+                    Frontend Developer <span>Блок Верстка HTML/CSS</span>
+                </div>
+                <div class="teacher__card-experience">
+                    Опыт преподавания : 2 года
+                </div>
+            </div>
+            <div class="teacher__card">
+                <div class="teacher__card-img-wrapper">
+                    <img src="{% static 'img/artem_teacher.jpg' %}" alt="" class="teacher__card-img">
+                </div>
+                <div class="teacher__card-name">
+                    Артем Латуговский
+                </div>
+                <div class="teacher__card-line">
+
+                </div>
+                <div class="teacher__card-work-name">
+                    Frontend Developer <span>Блок «Advanced JavaScript/React»</span>
+                </div>
+                <div class="teacher__card-experience">
+                    Опыт преподавания : 1 год
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}

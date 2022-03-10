@@ -1,0 +1,5 @@
+../venv
+.directory
+app_roma/migrations/*.py
+!app_roma/migrations/__init__.py
+databases.sqlite3

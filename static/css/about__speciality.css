@@ -1,0 +1,206 @@
+.container {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background: #F7F8F3;
+}
+
+.container__speciality {
+  position: relative;
+  left: 14.63vw;
+  width: 85.3vw;
+  min-height: 100vh;
+  padding: 4.68vw 9.8vw 5.46vw 3.43vw;
+}
+
+.speciality__link-back {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.83vw;
+  line-height: 100%;
+  color: #000000;
+  display: block;
+  margin-bottom: 1.66vw;
+}
+
+.speciality__title {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5vw;
+  line-height: 3.23vw;
+  color: #2F5A53;
+  margin-bottom: 1.25vw;
+}
+
+.speciality__subtitle {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.875vw;
+  line-height: 2.45vw;
+  color: #2F5A53;
+  margin-bottom: 1.25vw;
+}
+
+.speciality__text {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  color: #1C1D25;
+  margin-bottom: 1.25vw;
+}
+
+.speciality__wrapper-text {
+  margin-bottom: 2.5vw;
+}
+
+.speciality__wrapper-text:last-child {
+  margin-bottom: 0;
+}
+
+.speciality__text-before {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.94vw;
+  line-height: 1.2vw;
+  color: #1C1D25;
+  padding-left: 0.625vw;
+  position: relative;
+}
+
+.speciality__text-before::before {
+  content: "";
+  background: #C5C5C5;
+  border-radius: 50%;
+  width: 0.260vw;
+  height: 0.260vw;
+  position: absolute;
+  left: 0;
+  top: 0.47vw;
+}
+
+.speciality__link {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  color: #FFFFFF;
+  padding: 1.14vw 1.66vw;
+  background: #B00D23;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 1366px) {
+  .container__speciality {
+    left: 20vw;
+    width: 79.43vw;
+    padding: 5.86vw 2.78vw 5.86vw 6vw;
+  }
+  .speciality__link-back {
+    font-size: 1.171vw;
+    margin-bottom: 2.342vw;
+  }
+  .speciality__title {
+    font-size: 3.51vw;
+    line-height: 4.54vw;
+    margin-bottom: 1.75vw;
+  }
+  .speciality__subtitle {
+    font-size: 2.63vw;
+    line-height: 3.44vw;
+    margin-bottom: 1.75vw;
+  }
+  .speciality__text {
+    font-size: 1.171vw;
+    line-height: 1.54vw;
+    margin-bottom: 1.75vw;
+  }
+  .speciality__wrapper-text {
+    margin-bottom: 3.51vw;
+  }
+  .speciality__wrapper-text:last-child {
+    margin-bottom: 0;
+  }
+  .speciality__text-before {
+    font-size: 1.31vw;
+    line-height: 1.68vw;
+    padding-left: 0.732vw;
+  }
+  .speciality__text-before::before {
+    width: 0.366vw;
+    height: 0.366vw;
+    top: 0.65vw;
+  }
+  .speciality__link {
+    font-size: 1.171vw;
+    line-height: 1.537vw;
+    padding: 1.61vw 2.342vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .container__speciality {
+    left: 0;
+    width: 100vw;
+    padding: 6.66vw 2.22vw 22.2vw 2.22vw;
+  }
+  .speciality__link-back {
+    display: none;
+  }
+  .speciality__title {
+    font-size: 9.99vw;
+    line-height: 120%;
+    margin-bottom: 4.44vw;
+  }
+  .speciality__subtitle {
+    font-size: 6.66vw;
+    line-height: 120%;
+    margin-bottom: 2.22vw;
+  }
+  .speciality__text {
+    font-size: 3.88vw;
+    line-height: 4.72vw;
+    margin-bottom: 2.22vw;
+  }
+  .speciality__wrapper-text {
+    margin-bottom: 4.44vw;
+  }
+  .speciality__wrapper-text:last-child {
+    margin-bottom: 0;
+  }
+  .speciality__text-before {
+    font-size: 3.33vw;
+    line-height: 120%;
+    padding-left: 2.22vw;
+  }
+  .speciality__text-before::before {
+    width: 1.38vw;
+    height: 1.38vw;
+    top: 1.3vw;
+  }
+  .speciality__link {
+    font-size: 4.44vw;
+    line-height: 5.83vw;
+    padding: 6vw 0;
+    text-align: center;
+    width: 100%;
+  }
+}

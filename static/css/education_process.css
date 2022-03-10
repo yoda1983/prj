@@ -1,0 +1,654 @@
+
+.education__button:hover {
+  background: #B00D23;
+  color: #FFFFFF;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background: #F7F8F3;
+}
+
+.education {
+  position: relative;
+  left: 14.63vw;
+  width: 85.3vw;
+  min-height: 100vh;
+  padding: 4.68vw 9.8vw 5.46vw 3.43vw;
+}
+
+.education__title {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5vw;
+  line-height: 3vw;
+  color: #2F5A53;
+  margin-bottom: 1.66vw;
+}
+
+iframe {
+  width: 100%;
+  height: 26vw;
+  margin-bottom: 1.66vw;
+  border-radius: 10px;
+}
+
+.education__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 5.42vw;
+}
+
+.education__platform {
+  width: 35.20vw;
+  padding: 0.83vw 0.83vw 1.66vw 0.83vw;
+  background: #FBFCF7;
+  -webkit-box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+  box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+  border-radius: 10px;
+}
+
+.platform__title {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25vw;
+  line-height: 1.61vw;
+  color: #2F5A53;
+  margin-bottom: 0.83vw;
+}
+
+.platform__text {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  color: #1C1D25;
+  margin-bottom: 0.83vw;
+}
+
+.platform__text span {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.platform__text:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.platform__list {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  color: #1C1D25;
+  list-style: inside;
+}
+
+.platform__item:last-child {
+  margin: 0;
+}
+
+.platform__item {
+  margin-bottom: 0.83vw;
+}
+
+.education__format {
+  background: #FBFCF7;
+  -webkit-box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+  box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+  border-radius: 10px;
+  padding: 1.25vw 0 1.66vw 0;
+  margin-bottom: 1.66vw;
+}
+
+.format {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 1.25vw;
+}
+
+.format__link {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.94vw;
+  line-height: 1.2vw;
+  color: #8E8E92;
+  display: block;
+  height: 1.66vw;
+  cursor: pointer;
+  margin-right: 6.77vw;
+}
+
+.red_format {
+  color: #B00D23;
+  border-bottom: 4px solid #B00D23;
+}
+
+.format__link:last-child {
+  margin: 0;
+}
+
+.format__line {
+  width: 100%;
+  background-color: #C5C5C5;
+  height: 0.052vw;
+  margin-bottom: 1.25vw;
+}
+
+.about__wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+.format__online {
+  padding: 0 1.25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: none;
+}
+
+.format__offline {
+  padding: 0 1.25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.format__videocourse {
+  padding: 0 1.25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: none;
+}
+
+.about__title {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25vw;
+  line-height: 1.61vw;
+  color: #1C1D25;
+  margin-bottom: 0.83vw;
+}
+
+.about__text {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  color: #1C1D25;
+}
+
+.education__form-title {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.875vw;
+  line-height: 2.45vw;
+  text-align: center;
+  color: #2F5A53;
+  margin-bottom: 1.25vw;
+}
+
+.education__form-subtitle {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.94vw;
+  line-height: 1.2vw;
+  text-align: center;
+  color: #1C1D25;
+  margin-bottom: 1.25vw;
+}
+
+.form__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.education__form {
+  width: 22.97vw;
+  padding: 1.25vw 2.864vw 1.66vw 2.864vw;
+  background: #FBFCF7;
+  -webkit-box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+  box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+  border-radius: 10px;
+  margin-bottom: 1.25vw;
+}
+
+.education__form-text {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.94vw;
+  line-height: 1.2vw;
+  color: #1C1D25;
+  margin-bottom: 0.83vw;
+}
+
+.education__form-input {
+  width: 100%;
+  border: 1px solid #1C1D25;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 7px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  color: #000000;
+  padding: 0.88vw 1.25vw;
+  margin-bottom: 1.25vw;
+}
+
+.education__form-button {
+  width: 100%;
+  display: block;
+  padding: 0.83vw 0;
+  background: #B00D23;
+  border-radius: 5px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.94vw;
+  line-height: 1.2vw;
+  color: #FFFFFF;
+  margin-bottom: 0.416vw;
+}
+
+.education__form-text:nth-child(5) {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  text-align: center;
+  color: #8E8E92;
+  margin: 0;
+}
+
+.education__button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.education__button {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.94vw;
+  line-height: 1.2vw;
+  text-align: center;
+  background-color: transparent;
+  color: #1C1D25;
+  border: 1px solid #B00D23;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0.78vw 5.52vw;
+}
+
+@media screen and (max-width: 1366px) {
+  .education {
+    left: 20vw;
+    width: 79.43vw;
+    min-height: 100vh;
+    padding: 5.86vw 2.78vw 5.86vw 6vw;
+  }
+  .education__title {
+    font-size: 2.64vw;
+    line-height: 3.15vw;
+    margin-bottom: 1.757vw;
+  }
+  iframe {
+    width: 100%;
+    height: 31.62vw;
+    margin-bottom: 1.757vw;
+  }
+  .education__wrapper {
+    margin-bottom: 5.85vw;
+  }
+  .education__platform {
+    width: 34.40vw;
+    padding: 1.171vw 1.171vw 1.757vw 1.171vw;
+  }
+  .platform__title {
+    font-size: 1.32vw;
+    line-height: 1.68vw;
+    margin-bottom: 1.171vw;
+  }
+  .platform__text {
+    font-size: 1.02vw;
+    line-height: 1.24vw;
+    margin-bottom: 0.59vw;
+  }
+  .platform__text span {
+    font-weight: 400;
+  }
+  .platform__text:nth-child(3) {
+    margin-bottom: 0;
+  }
+  .platform__list {
+    font-size: 1.02vw;
+    line-height: 1.24vw;
+  }
+  .platform__item:last-child {
+    margin: 0;
+  }
+  .platform__item {
+    margin-bottom: 1.171vw;
+  }
+  .education__format {
+    padding: 1.171vw 0 2.342vw 0;
+    margin-bottom: 2.342vw;
+  }
+  .format {
+    padding-left: 1.757vw;
+  }
+  .format__link {
+    font-size: 1.32vw;
+    line-height: 1.68vw;
+    height: 2.342vw;
+    margin-right: 9.52vw;
+  }
+  .format__link:last-child {
+    margin: 0;
+  }
+  .format__line {
+    height: 0.073vw;
+    margin-bottom: 1.171vw;
+  }
+  .format__online {
+    padding: 0 1.757vw;
+  }
+  .format__offline {
+    padding: 0 1.757vw;
+  }
+  .format__videocourse {
+    padding: 0 1.757vw;
+  }
+  .about__title {
+    font-size: 1.32vw;
+    line-height: 1.68vw;
+    margin-bottom: 0.59vw;
+  }
+  .about__text {
+    font-size: 1.02vw;
+    line-height: 1.24vw;
+  }
+  .education__form-title {
+    font-size: 2.635vw;
+    line-height: 3.44vw;
+    margin-bottom: 1.757vw;
+  }
+  .education__form-subtitle {
+    font-size: 1.32vw;
+    line-height: 1.68vw;
+    margin-bottom: 1.757vw;
+  }
+  .education__form {
+    width: 32.28vw;
+    padding: 1.757vw 4.02vw 2.342vw 4.02vw;
+    margin-bottom: 1.757vw;
+  }
+  .education__form-text {
+    font-size: 1.32vw;
+    line-height: 1.68vw;
+    margin-bottom: 1.171vw;
+  }
+  .education__form-input {
+    border: 1px solid #C5C5C5;
+    font-size: 1.171vw;
+    line-height: 1.54vw;
+    padding: 1.22vw 1.757vw;
+    margin-bottom: 1.757vw;
+  }
+  .education__form-button {
+    padding: 1.171vw 0;
+    font-size: 1.32vw;
+    line-height: 1.68vw;
+    margin-bottom: 0.59vw;
+  }
+  .education__form-text:nth-child(5) {
+    font-size: 1.171vw;
+    line-height: 1.54vw;
+  }
+  .education__button {
+    font-size: 1.32vw;
+    line-height: 1.68vw;
+    padding: 1.141vw 7.76vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .education {
+    left: 0;
+    width: 100vw;
+    padding: 20vw 2.22vw 22.2vw 2.22vw;
+  }
+  .education__title {
+    font-size: 6.66vw;
+    line-height: 8.05vw;
+    margin-bottom: 6.66vw;
+  }
+  iframe {
+    width: 100%;
+    height: 56.94vw;
+    margin-bottom: 4.44vw;
+  }
+  .education__wrapper {
+    margin-bottom: 4.44vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .education__platform {
+    width: 100%;
+    padding: 2.22vw 6.66vw 4.44vw 2.22vw;
+  }
+  .education__platform:nth-child(1) {
+    margin-bottom: 4.44vw;
+  }
+  .platform__title {
+    font-size: 5vw;
+    line-height: 6.38vw;
+    margin-bottom: 4.44vw;
+  }
+  .platform__text {
+    font-size: 3.88vw;
+    line-height: 4.72vw;
+    margin-bottom: 2.22vw;
+  }
+  .platform__text:nth-child(3) {
+    margin-bottom: 0;
+  }
+  .platform__list {
+    font-size: 3.88vw;
+    line-height: 4.72vw;
+  }
+  .platform__item {
+    margin-bottom: 4.44vw;
+    list-style: inside;
+  }
+  .education__format {
+    padding: 2.22vw 0 6.66vw 0;
+    margin-bottom: 11vw;
+  }
+  .format {
+    padding-left: 6.66vw;
+    padding-right: 6.66vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .format__link {
+    font-size: 3.88vw;
+    line-height: 5vw;
+    height: 7vw;
+    margin-right: 0;
+  }
+  .online{
+    height: 12vw;
+  }
+  .videocourse{
+    height: 12vw;
+  }
+  .format__link span{
+    display: block;
+  }
+  .format__line {
+    height: 0.27vw;
+    margin-bottom: 4.44vw;
+  }
+  .format__online {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 2.22vw;
+    display: none;
+  }
+  .format__offline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 2.22vw;
+  }
+  .format__videocourse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 2.22vw;
+    display: none;
+  }
+  .about__title {
+    font-size: 5vw;
+    line-height: 6.38vw;
+    margin-bottom: 2.22vw;
+  }
+  .title__offline {
+    margin-bottom: 6vw;
+  }
+  .about__text {
+    font-size: 3.88vw;
+    line-height: 4.72vw;
+    margin-bottom: 4.44vw;
+  }
+  .education__form-title {
+    font-size: 6.66vw;
+    line-height: 7.2vw;
+    margin-bottom: 4.44vw;
+  }
+  .education__form-subtitle {
+    font-size: 3.88vw;
+    line-height: 4.72vw;
+    margin-bottom: 6.66vw;
+  }
+  .education__form {
+    width: 100%;
+    padding: 4.44vw;
+    margin-bottom: 4.44vw;
+  }
+  .education__form-text {
+    font-size: 3.88vw;
+    line-height: 5vw;
+    margin-bottom: 4.44vw;
+  }
+  .education__form-text:nth-child(5) {
+    font-size: 3.88vw;
+    line-height: 4.72vw;
+  }
+  .education__form-input {
+    font-size: 3.88vw;
+    line-height: 5vw;
+    padding: 3.89vw;
+    margin-bottom: 2.22vw;
+  }
+  .education__form-button {
+    padding: 3.89vw 0;
+    font-size: 4.44vw;
+    line-height: 5.83vw;
+    margin-bottom: 2.22vw;
+  }
+  .education__form-text:nth-child(4) {
+    font-size: 3.88vw;
+    line-height: 4.72vw;
+  }
+  .education__button-wrapper {
+    padding: 0 5vw;
+  }
+  .education__button {
+    font-size: 4.44vw;
+    line-height: 5.83vw;
+    padding: 3.6vw 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,247 @@
+
+@media screen and (max-width: 768px){
+    .container__menu-mobile {
+        width: 100vw;
+        position: fixed;
+        z-index: 50;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        background: #FBFCF7;
+        -webkit-box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.05);
+                box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.05);
+        border-radius: 0px;
+    }
+    .container__menu {
+        display: none;
+    }
+    .menu__logo-mobile {
+        display: block;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 3.8vw 3.8vw;
+    }
+    .menu__logo-mobile p {
+        font-family: HelveticaNeueCyr-Light;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 3.8vw;
+        line-height: 3.8vw;
+        color: #1C1D25;
+    }
+    .menu__logo-mobile span {
+        font-family: HelveticaNeueCyr-Medium;
+        font-style: normal;
+        font-weight: 550;
+        font-size: 6.6vw;
+        line-height: 6.6vw;
+        letter-spacing: 0.05em;
+    }
+    .menu {
+        display: none;
+    }
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 28px;
+        height: 20px;
+        z-index: 3;
+    }
+    .header__burger:before,
+    .header__burger:after {
+        content: '';
+        background-color: #1C1D25;
+        position: absolute;
+        width: 28px;
+        height: 3px;
+        left: 0;
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+    .header__burger > span {
+        background-color: #1C1D25;
+        position: absolute;
+        width: 28px;
+        height: 3px;
+        left: 0;
+        content: '';
+        top: 9px;
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+    .header__burger:before {
+        top: 0;
+    }
+    .header__burger:after {
+        bottom: 0;
+    }
+    .header__burger.active:before {
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__burger.active:after {
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header__burger.active span {
+        -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+                transform: scale(0);
+    }
+    body .lock {
+        overflow: hidden;
+    }
+    .open {
+        height: calc(var(--vh, 1vh) * 100);
+        overflow-x: auto;
+    }
+    .flex__menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .header__menu {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+                flex: 1 1 auto;
+        top: 13.4vw;
+        left: 0;
+        background: #FBFCF7;
+    }
+    .header__list {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+                flex: 1 1 auto;
+        width: 100vw;
+        list-style-type: none;
+        position: relative;
+    }
+    .header__list li {
+        width: 100vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        /* padding: 5.27vw 2.27vw 5.27vw 9.16vw; */
+    }
+    .header__list li:hover {
+        background: #C5C5C5;
+    }
+    .header__list img {
+        width: 4vw;
+        height: 4vw;
+    }
+    .header__link {
+        width: 100%;
+        color: #8E8E92;
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 4.44vw;
+        line-height: 4.44vw;
+        padding: 5vw 2.27vw 5vw 17.8vw;
+        /* можно поставть меньше */
+        /* padding: 5.27vw 2.27vw 5.27vw 17.8vw; вверху новые значения, уменьшил по высоте сами кнопки для нажатия */
+        /* padding-left: 2.22vw; */
+    }
+    /* добавил при нажатии чтобы цвет не менялся */
+    .header__link:active{
+        background: #C5C5C5;
+    }
+    .header__menu-contact {
+        /* тут был левый падинг 9.16, оставил 11 потому что картинки надо тогда тоже подвигать влево */
+        padding: 0 0 8.88vw 11vw;
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 4.4vw;
+        line-height: 5.27vw;
+        color: #1C1D25;
+    }
+    .header__menu-text {
+        width: 57vw;
+    }
+    .header__menu-sosial-network {
+        margin-top: 4.4vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .header__menu-social-link {
+        display: block;
+        margin-right: 4.44vw;
+    }
+    .header__menu-telephone {
+        margin-top: 4.4vw;
+    }
+    .header__menu-telephone-number {
+        font-family: IBM Plex Sans;
+        font-size: 5vw;
+        font-weight: 600;
+    }
+    .header__menu-telephone-text {
+        margin-bottom: 2.22vw;
+    }
+    .menu__footer {
+        display: none;
+    }
+    .mobile__main {
+        background: url(../img/main__gray.svg) no-repeat;
+        background-size: 4.44vw;
+        background-position: 11vw center;
+    }
+    .mobile__course {
+        background: url(../img/course.svg) no-repeat;
+        background-size: 4.72vw 3.61vw;
+        background-position: 11vw center;
+    }
+    .mobile__education {
+        background: url(../img/education.svg) no-repeat;
+        background-size: 5vw;
+        background-position: 11vw center;
+    }
+    .mobile__startwork {
+        background: url(../img/startwork.svg), url(../img/fire__menu.svg);
+        background-repeat: no-repeat;
+        background-size: 4.72vw 4.2vw, 5vw;
+        background-position: 11vw center, 38.8vw center;
+    }
+    .mobile__groups {
+        background: url(../img/start_group.svg), url(../img/fire__menu.svg);
+        background-repeat: no-repeat;
+        background-size: 4.44vw, 5vw;
+        background-position: 11vw center, 72.5vw center;
+    }
+    .mobile__teacher {
+        background: url(../img/teacher.svg) no-repeat;
+        background-size: 4.44vw 3.61vw;
+        background-position: 11vw center;
+    }
+    .mobile__about {
+        background: url(../img/what_about_itec.svg) no-repeat;
+        background-size: 4.72vw 5.27vw;
+        background-position: 11vw center;
+    }
+    /* добавил размера картинкам с соц сетями, тоже можно убрать */
+    .header__menu-social-img{
+        width: 8vw;
+        height: 8vw;
+    }
+}

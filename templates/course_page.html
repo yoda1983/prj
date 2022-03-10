@@ -1,0 +1,249 @@
+{% extends 'main.html' %}
+{% load static %}
+
+    {% block title %}
+    <title>Стать программистом за 5 месяцев | Выбери свое направление | Фронтенд, бэкенд или фулстек-разработчик</title>
+    {% endblock %}
+
+    {% block meta %}
+    <meta name="description" content="Как стать программистом за 5 месяцев с последуюшим трудоустройством | Выбери свое направление | Фронтенд, бэкенд или фулстек-разработка">
+    <meta name="keywords" content="Фронтенд разработчик, бэкэнд разработчик, фулстэк разработчик, стать программистом, обучение с трудоустройством">
+    {% endblock %}
+
+    {% block css %}
+    <link rel="icon" href="{% static 'img/course_catalog_white.svg' %}">
+    <link rel="stylesheet" href="{% static 'css/course_page.css' %}">
+    <link rel="stylesheet" href="{% static 'css/form__application.css' %}">
+    <link rel="stylesheet" href="{% static 'css/menu_for_catalog_course.css' %}">
+    {% endblock %}
+
+        {% block content %}
+        <div  class="container__course" id="content">
+            <h1 class="course__title">
+                Каталог курсов
+            </h1>
+            <div class="course__subtitle">
+                «Ничему нельзя научить, всему можно только научиться.»
+            </div>
+            <div class="course__subtitle">
+                К.С. Станиславский
+            </div>
+            {%  for i in obj %}
+            <div class="course__name-wrapper">
+                <a name="front">
+                    <h2 class="course__name">
+                        {{i.name_specialization}}
+                    </h2>
+                </a>
+                <div class="course__number-course">
+                    {% if i.spec.all|length == 1  %}
+                    {{ i.spec.all|length }} курс
+                    {% elif i.spec.all|length <= 4 %}
+                    {{ i.spec.all|length }} курса
+                    {% else %}
+                    {{ i.spec.all|length }} курсов
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="course__wrapper">
+                {% for item in i.spec.all  %}
+                <div class="course__about">
+                <div class="about__start-text">
+                    {% if item.name_courses == 'Node.js, серверная разработка' %}
+                    Идет набор в группу
+                    {% else %}
+                    Старт обучения: <span>{{item.add_course.first.data_begins|date:'j E'}}</span>
+                    {% endif %}
+                </div>
+                <h3 class="about__title">
+                    {{item.name_courses }}
+                </h3>
+                <div class="about__subtitle">
+                    {{item.description_course}}
+                </div>
+                <ul class="about__list">
+                    {% for spec in item.course.all %}
+                    <li>
+                        {{spec.detail}}
+                    </li>
+                    {% endfor %}
+                </ul>
+                <div class="about__form">
+                    <button type="submit" class="about__form-button">
+                        Оставить заявку
+                    </button>
+                    <div class="about__form-wrapper">
+                        <a href="{% url 'app_roma:pdf_response' id=item.id %}" class="about__form-link">
+                            Программа обучения
+                        </a>
+                        <a href="{% url 'app_roma:pdf_response' id=item.id %}" class="about__form-link-specialty">
+                            О специальности
+                        </a>
+                    </div>
+                </div>
+                <div class="about__wrapper">
+                    <div class="about__training">
+                        <div class="training__time">
+                            {% if item.quantity_lesson == 1 %}
+                            {{item.quantity_lesson}} месяц
+                            {% elif item.quantity_lesson <= 4 %}
+                            {{item.quantity_lesson}} месяца
+                            {% else %}
+                            {{item.quantity_lesson}} месяцев
+                            {% endif %}
+                        </div>
+                        <div class="training__text">
+                            Время обучения
+                        </div>
+                    </div>
+                    <div class="about__cost">
+                        <div class="cost__text">
+                            {{ item.cross_cost}} BYN
+                        </div>
+                        <div class="cost__number">
+                            {{item.cost|floatformat:"0"}} BYN
+                        </div>
+                        <div class="cost__text">
+                            Стоимость в месяц {{ item.cost_in_month }} BYN
+                        </div>
+                    </div>
+                </div>
+                <div class="about__line">
+
+                </div>
+                <div class="about__bottom">
+                    <div class="bottom__text">
+                        Курс — Английский в IT
+                    </div>
+                    <div class="bottom__text">
+                        Скидка 40%
+                    </div>
+                    <div class="bottom__text">
+                        Выгода 70 BYN
+                    </div>
+                </div>
+                </div>
+
+                {% endfor %}
+            </div>
+            {% endfor %}
+            
+            <div class="course__container-english">
+                <div class="course__english-wrapper">
+                    <div class="course__english">
+                        <h2 class="english__title">
+                            Английский для IT
+                        </h2>
+                        <div class="english__subtitle">
+                            Делаем упор на стек технологий, которые вы изучаете
+                        </div>
+                        <div class="english__subtitle">
+                            В живых диалогах закрепляем фразы, которые пригодятся в работе, на собеседованиях и переговорах!
+                        </div>
+                        <div class="english__wrapper-subtitle">
+                            <div class="english__subtitle english__subtitle-margin">
+                                <span>4 месяца</span> Время обучения
+                            </div>
+                            <div class="english__subtitle">
+                                <span>{{eng.price}} BYN</span>Стоимость курса
+                            </div>
+                        </div>
+                    </div>
+                    <div class="english__about-line">
+                        <img src="{% static 'img/course_line.svg' %}" alt="" class="english__about-line-img">
+                    </div>
+                    <div class="course__english-about">
+                        <div class="english__about-text">
+                            Комплексная программа изучения английского языка 
+                            для специалистов IT-сферы. Направлена на формирование и дальнейшее совершенствование речевых навыков в профессиональной среде.
+                        </div>
+                        <div class="english__about-text">
+                            Английский нужен для понимания терминологии, работы 
+                            с англоязычными интерфейсами, чтения технической документации, изучения профессиональной литературы и т.д.
+                        </div>
+                    </div>
+                </div>
+                <div class="english__wrapper">
+                    <button type="submit" class="english__button">
+                        Оставить заявку
+                    </button>
+                    <div class="english__cost ">
+
+                        <div>{{eng.price_in_month}} BYN</div>
+                        <div class="english__subtitle"> Цена в месяц </div>
+                    </div>
+                    <div class="english__discount-circle">
+                        <div class="discount__circle">
+                            <div class="circle__text">
+                                Скидка
+                            </div>
+                            <div class="circle__text">
+                                40%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="english__text-wrapper">
+                        <div class="english__text">
+                            При покупке
+                        </div>
+                        <div class="english__text">
+                            любого курса
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="course__title-question">
+                Есть вопрос о специальностях?
+            </div>
+            <div class="course__subtitle-question">
+                Расскажем про все особенности курсов. <span>Ответим на вопросы</span>
+            </div>
+            <form action="{% url 'app_roma:list_courses' %}" class="course__form" method="POST">
+                <div class="form">
+                    <div class="course__form-text">
+                        Номер телефона
+                    </div>
+                    {% include 'form.html' %}
+
+                    <button class="course__form-button">
+                        Получить консультацию
+                    </button>
+                    <div class="course__form-text">
+                        Перезвоним в течение 5 минут
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container__form-application" id="form_app">
+            <div class="form-application__block">
+                <div class="form-application__cross">
+                    <img src="{% static 'img/cross.svg' %}" alt="" class="form-application__cross-img">
+                </div>
+                <div class="form-application__image">
+                    <img src="{% static 'img/form__image-application.svg' %}" alt="" class="form-application__img">
+                </div>
+                <div class="form-application__text-wrapper">
+                    <div class="form-application__text">
+                        Заявка на курс
+                    </div>
+                    <div class="form-application__name-course">
+                        "Название курса"
+                    </div>
+                </div>
+                <form action="{% url 'app_roma:list_courses' %}" method="POST">
+                    {% include 'form_course.html' %}
+
+                    <div class="form-application__form-wrapper">
+                        <button class="form-application__button">
+                            Оставить заявку
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        {% endblock %}
+
+    {% block script %}
+    <script src="{% static 'js/form_application_for_catalog_course.js' %}"></script>
+    {%  endblock %}

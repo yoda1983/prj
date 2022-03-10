@@ -1,0 +1,370 @@
+    .menu__logo-mobile {
+    display: none;
+    }
+
+    .container__menu {
+    left: 0;
+    top: 0;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 14.63vw;
+    min-height: 100vh;
+    padding: 0.416vw 0 0 0;
+    background: #FBFCF7;
+    -webkit-box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.05);
+    box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.05);
+    border-radius: 0px 10px 10px 0px;
+    }
+
+    .menu__logo-wrapper{
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    max-height: 4.69vw;
+    }
+
+    .menu__logo {
+    font-family: HelveticaNeueCyr-Light;
+    font-size: 0.73vw;
+    line-height: 0.73vw;
+    padding-bottom: 0.416vw;
+    padding-left: 1.66vw;
+    }
+    .menu__logo-link{
+    color: #1C1D25;
+    }
+
+    .menu__logo span {
+    font-family: HelveticaNeueCyr-Medium;
+    font-size: 1.25vw;
+    line-height: 1.25vw;
+    letter-spacing: 0.05em;
+    color: #1C1D25;
+    }
+
+    .menu {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    }
+
+    .menu__link {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: normal;
+    display: block;
+    font-size: 0.83vw;
+    line-height: 1.09vw;
+    color: #8E8E92;
+    padding: 0.99vw 0 0.99vw 2.97vw;
+    }
+
+    .menu__item:nth-child(2) {
+    background: url(../img/course.svg) no-repeat 1.66vw;
+    background-size: 0.94vw 0.94vw;
+    }
+
+    .menu__item:nth-child(1) {
+    background: url(../img/main__gray.svg) no-repeat 1.66vw;
+    background-size: 0.94vw 0.94vw;
+    }
+
+    .menu__item:nth-child(3) {
+    background: url(../img/education.svg);
+    background-repeat: no-repeat;
+    background-position: 1.66vw;
+    background-size: 0.94vw 0.94vw;
+    }
+
+    .menu__item:nth-child(4) {
+    background: url(../img/startwork.svg), url(../img/image_fire.png);
+    background-repeat: no-repeat;
+    background-position: 1.66vw, 6.82vw;
+    background-size: 0.91vw 0.79vw, 0.94vw 0.94vw;
+    }
+
+    .menu__item:nth-child(5) {
+        background: url(../img/start_group.svg), url(../img/image_fire.png);
+        background-repeat: no-repeat;
+        background-position: 1.66vw, 13vw;
+        background-size: 0.83vw 0.78vw ,0.94vw 0.94vw;
+    }
+
+    .menu__item:nth-child(7) {
+    background: url(../img/what_about_itec.svg) no-repeat 1.66vw;
+    background-size: 0.89vw 0.99vw;
+    }
+
+    .menu .menu__item:nth-child(6) {
+    background: url(../img/teacher__white.svg) no-repeat 1.66vw;
+    background-color: #2F5A53;
+    background-size: 0.89vw 0.99vw;
+    }
+
+    .teacher__menu {
+    color: #FFFFFF;
+    font-size: 0.83vw;
+    line-height: 1.09vw;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 500;
+    }
+
+    .menu__item:hover {
+    background: #C5C5C5;
+    }
+
+    .menu__item:nth-child(2) .menu__link:hover {
+    color: #1C1D25;
+    background: url(../img/course_catalog_white.svg) no-repeat 1.66vw;
+    background-size: 0.83vw 0.83vw;
+    }
+
+    .menu__item:nth-child(1) .menu__link:hover {
+    color: #1C1D25;
+    background: url(../img/main_page.svg) no-repeat 1.66vw;
+    background-size: 0.94vw 0.94vw;
+    }
+
+    .menu__item:nth-child(3) .menu__link:hover {
+    color: #1C1D25;
+    background: url(../img/education__white.svg);
+    background-repeat: no-repeat;
+    background-position: 1.66vw;
+    background-size: 0.94vw 0.94vw;
+    }
+
+    .menu__item:nth-child(4) .menu__link:hover {
+    color: #1C1D25;
+    background: url(../img/start__work_white.svg), url(../img/image_fire.png);
+    background-repeat: no-repeat;
+    background-position: 1.66vw, 6.82vw;
+    background-size: 0.91vw 0.79vw, 0.94vw 0.94vw;
+    }
+
+    .menu__item:nth-child(5) .menu__link:hover {
+        color: #1C1D25;
+        background: url(../img/start__course_white.svg), url(../img/image_fire.png);
+        background-repeat: no-repeat;
+        background-position: 1.66vw, 13vw;
+        background-size: 0.83vw 0.78vw ,0.94vw 0.94vw;
+    }
+
+    .menu__item:nth-child(7) .menu__link:hover {
+    color: #1C1D25;
+    background: url(../img/about__itec_white.svg) no-repeat 1.66vw;
+    background-size: 0.89vw 0.99vw;
+    }
+
+    .menu__footer {
+    padding: 1.66vw 1.042vw 0 1.66vw;
+    background: #E0E0DE;
+    border-radius: 0px 0px 10px 0px;
+    }
+
+    .menu__text {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.83vw;
+    line-height: 0.99vw;
+    color: #1C1D25;
+    }
+
+    .menu__social-wrapper {
+    margin: 0.83vw 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    }
+
+    .menu__social-link {
+    margin-right: 0.83vw;
+    }
+
+    .menu__social-wrapper .menu__social-link:last-child {
+    content: "";
+    margin: 0;
+    }
+
+    .social__link-img {
+    display: block;
+    width: 1.72vw;
+    height: 1.72vw;
+    }
+
+    .social__link-img {
+    width: 100%;
+    height: 100%;
+    }
+
+    .telefon {
+    margin: 0.416vw 0 1.3vw 0;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.94vw;
+    line-height: 1.2vw;
+    color: #000000;
+    }
+
+    .menu__right {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.83vw;
+    line-height: 1.09vw;
+    color: #8E8E92;
+    padding-bottom: 1.66vw;
+    }
+
+@media screen and (max-width: 1366px){
+    .container__menu {
+        width: 20.5vw;
+        padding: 0.59vw 0 0 0;
+    }
+    .menu__logo-wrapper{
+        max-height: 6.59vw;
+    }
+    .menu__logo {
+        font-size: 1.02vw;
+        line-height: 1.02vw;
+        padding-bottom: 0.59vw;
+        padding-left: 2.342vw;
+    }
+    .menu__logo span {
+        font-size: 1.757vw;
+        line-height: 1.757vw;
+    }
+    .menu__list {
+    }
+    .menu__item {
+    }
+    .menu__link {
+        font-size: 1.171vw;
+        line-height: 1.171vw;
+        padding: 1.39vw 0 1.39vw 4.173vw;
+    }
+    
+    .menu__item:nth-child(1){
+        background: url(../img/main__gray.svg) no-repeat 2.342vw;
+        background-size: 1.24vw 1.24vw;
+    }
+    .menu__item:nth-child(3){
+        background: url(../img/education.svg) no-repeat 2.342vw;
+        background-size: 1.32vw 1.32vw;
+    }
+    .menu__item:nth-child(2){
+        background: url(../img/course.svg);
+        background-repeat: no-repeat;
+        background-position: 2.342vw;
+        background-size: 1.24vw 1.24vw;
+    }
+    .menu__item:nth-child(4){
+        background: url(../img/startwork.svg), url(../img/image_fire.png);
+        background-repeat: no-repeat;
+        background-position: 2.342vw, 9.585vw;
+        background-size: 1.24vw 1.24vw, 1.32vw 1.32vw;
+    }
+    .menu__item:nth-child(5){
+        background: url(../img/start_group.svg), url(../img/image_fire.png);
+        background-repeat: no-repeat;
+        background-position: 2.342vw, 18.3vw;
+        background-size: 1.24vw 1.24vw, 1.32vw 1.32vw;
+    }
+    .menu__item:nth-child(7){
+        background: url(../img/what_about_itec.svg) no-repeat 2.342vw;
+        background-size: 1.24vw 1.39vw;
+    }
+    .menu .menu__item:nth-child(6){
+        background: url(../img/teacher__white.svg) no-repeat 2.342vw;
+        background-color: #2F5A53;
+        background-size: 1.24vw 1.24vw;
+    }
+    .teacher__menu{
+        font-size: 1.171vw;
+        line-height: 1.54vw;
+    }
+    .menu__item:hover{
+        background: #C5C5C5;
+    }
+    .menu__item:nth-child(1) .menu__link:hover{
+        color: #1C1D25;
+        background: url(../img/main_page.svg) no-repeat 2.342vw;
+        background-size: 1.24vw 1.24vw;
+    }
+    .menu__item:nth-child(2) .menu__link:hover{
+        color: #1C1D25;
+        background: url(../img/course_catalog_white.svg) no-repeat 2.342vw;
+        background-size: 1.32vw 1.32vw;
+    }
+    .menu__item:nth-child(3) .menu__link:hover{
+        color: #1C1D25;
+        background: url(../img/education__white.svg);
+        background-repeat: no-repeat;
+        background-position: 2.342vw;
+        background-size: 1.24vw 1.24vw;
+    }
+    .menu__item:nth-child(4) .menu__link:hover{
+        color: #1C1D25;
+        background: url(../img/start__work_white.svg), url(../img/image_fire.png);
+        background-repeat: no-repeat;
+        background-position: 2.342vw, 9.585vw;
+        background-size: 1.24vw 1.24vw, 1.32vw 1.32vw;
+    }
+    .menu__item:nth-child(5) .menu__link:hover{
+        color: #1C1D25;
+        background: url(../img/start__course_white.svg), url(../img/image_fire.png);
+        background-repeat: no-repeat;
+        background-position: 2.342vw, 18.3vw;
+        background-size: 1.24vw 1.24vw, 1.32vw 1.32vw;
+    }
+    .menu__item:nth-child(7) .menu__link:hover{
+        color: #1C1D25;
+        background: url(../img/about__itec_white.svg) no-repeat 2.342vw;
+        background-size: 1.24vw 1.39vw;
+    }
+    .menu__footer {
+        padding: 2.342vw 1.464vw 0 2.342vw;
+    }
+    .menu__text {
+        font-size: 1.171vw;
+        line-height: 1.39vw;
+    }
+    .menu__social-wrapper {
+        margin: 1.171vw 0;
+        display: flex;
+    }
+    .menu__social-link {
+        margin-right: 1.171vw;
+    }
+    .menu__social-wrapper .menu__social-link:last-child{
+        content: ('');
+        margin: 0;
+    }
+    .social__link-img {
+        display: block;
+        width: 2.41vw;
+        height: 2.41vw;
+    }
+    .social__link-img{
+        width: 100%;
+        height: 100%;
+    }
+    .telefon {
+        margin: 0.59vw 0 2.342vw 0;
+        font-size: 1.32vw;
+        line-height: 1.68vw;
+    }
+    .menu__right {
+        font-size: 1.171vw;
+        line-height: 1.54vw;
+        padding-bottom: 2.342vw;
+    }
+}

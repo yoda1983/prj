@@ -1,0 +1,468 @@
+.come-group__button:hover{
+  background: #A20C20;
+}
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background: #F7F8F3;
+}
+
+.startwork {
+  position: relative;
+  left: 14.63vw;
+  width: 85.3vw;
+  min-height: 100vh;
+  padding: 4.68vw 9.8vw 5.46vw 3.43vw;
+}
+
+.startwork__title {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5vw;
+  line-height: 3.02vw;
+  color: #2F5A53;
+  margin-bottom: 1.25vw;
+}
+
+.startwork__subtitle {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  color: #1C1D25;
+  width: 45%;
+  margin-bottom: 1.66vw;
+}
+
+video {
+  width: 100%;
+  height: 26.04vw;
+  margin-bottom: 1.66vw;
+}
+
+.startwork-about__container {
+  background: #FBFCF7;
+  -webkit-box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+          box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+  border-radius: 10px;
+  padding: 1.66vw;
+  margin-bottom: 1.66vw;
+}
+
+.startwork-about__title {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25vw;
+  line-height: 1.61vw;
+  color: #1C1D25;
+  margin-bottom: 1.25vw;
+}
+
+.startwork-about__list {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.94vw;
+  line-height: 1.2vw;
+  color: #1C1D25;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.startwork-about__list span {
+  color: #2F5A53;
+}
+
+.startwork-about__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 31%;
+          flex: 0 0 31%;
+}
+
+.startwork__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.startwork__work-wrapper {
+  width: 35.21vw;
+  background: #FBFCF7;
+  -webkit-box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+          box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+  border-radius: 10px;
+  padding: 1.25vw 1.25vw 1.66vw 1.66vw;
+  margin-bottom: 1.66vw;
+}
+
+.work-wrapper__title {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25vw;
+  line-height: 1.61vw;
+  color: #1C1D25;
+  margin-bottom: 1.25vw;
+}
+
+.work-wrapper__text {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  color: #1C1D25;
+}
+
+.startwork__come-group {
+  background: #FBFCF7;
+  -webkit-box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+          box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.46vw 0 1.875vw 0;
+}
+
+.come-group__title {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.875vw;
+  line-height: 2.45vw;
+  color: #2F5A53;
+  margin-bottom: 0.83vw;
+}
+
+.come-group__subtitle {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.94vw;
+  line-height: 1.2vw;
+  text-align: center;
+  color: #1C1D25;
+  margin-bottom: 1.25vw;
+}
+
+.come-group__button {
+  background: #B00D23;
+  text-align: center;
+  border-radius: 5px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  color: #FFFFFF;
+  padding: 0.91vw 1.7vw;
+}
+
+/* Внесения корректировок по логотипам */
+
+.startwork__work-wrapper-height{
+  height: fit-content;
+}
+.work-wrapper__text-margin{
+  margin-bottom: 0.83vw;
+}
+.work-wrapper__logo-company{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.work-wrapper__logo-company img:nth-child(1){
+  display: block;
+  width: 7.5vw;
+  height: 3.2vw;
+}
+.work-wrapper__logo-company img:nth-child(2){
+  display: block;
+  width: 8vw;
+  height: 4.5vw;
+}
+.work-wrapper__logo-company img:nth-child(3){
+  display: block;
+  width: 3.125vw;
+  height: 3.125vw;
+}
+.work-wrapper__logo-company img:nth-child(4){
+  display: block;
+  width: 4.69vw;
+  height: 3.125vw;
+}
+
+/* Корректировки по логотипам студентов */
+
+.work-wrapper__student-work{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.student-work__link{
+  display: block;
+}
+
+.work-wrapper__student-work .student-work__link:nth-child(1){
+  width: 5vw;
+  height: 5vw;
+}
+.work-wrapper__student-work .student-work__link:nth-child(2){
+  width: 5vw;
+  height: 5vw;
+}
+.work-wrapper__student-work .student-work__link:nth-child(3){
+  width: 10vw;
+  height: 5vw;
+}
+.work-wrapper__student-work .student-work__link:nth-child(3) img{
+  border-radius: 8px;
+}
+.work-wrapper__student-work .student-work__link:nth-child(4){
+  width: 9vw;
+  height: 5vw;
+}
+.work-wrapper__student-work .student-work__link:nth-child(4) img{
+  border-radius: 8px;
+}
+.student-work__link img{
+  width: 100%;
+  height: 100%;
+} 
+
+@media screen and (max-width: 1366px) {
+  .startwork {
+    left: 20vw;
+    width: 79.43vw;
+    min-height: 100vh;
+    padding: 5.86vw 2.78vw 5.86vw 6vw;
+  }
+  .startwork__title {
+    font-size: 2.64vw;
+    line-height: 3.15vw;
+    margin-bottom: 1.171vw;
+  }
+  .startwork__subtitle {
+    width: 52%;
+    font-size: 1.02vw;
+    line-height: 1.24vw;
+    margin-bottom: 1.757vw;
+  }
+  video {
+    width: 100%;
+    height: 31.62vw;
+    margin-bottom: 1.757vw;
+  }
+  .startwork-about__container {
+    padding: 1.171vw 1.171vw 1.757vw 1.171vw;
+    margin-bottom: 1.757vw;
+  }
+  .startwork-about__title {
+    font-size: 1.32vw;
+    line-height: 1.68vw;
+    margin-bottom: 1.171vw;
+  }
+  .startwork-about__list {
+    font-size: 1.171vw;
+    line-height: 1.54vw;
+  }
+  .startwork__work-wrapper {
+    width: 34.40vw;
+    padding: 1.171vw;
+    margin-bottom: 1.757vw;
+  }
+  .work-wrapper__title {
+    font-size: 1.32vw;
+    line-height: 1.68vw;
+    margin-bottom: 0.59vw;
+  }
+  .work-wrapper__text {
+    font-size: 1.02vw;
+    line-height: 1.24vw;
+  }
+  .startwork__come-group {
+    padding: 1.171vw 0 1.757vw 0;
+  }
+  .come-group__title {
+    font-size: 2.64vw;
+    line-height: 3.44vw;
+    margin-bottom: 1.171vw;
+  }
+  .come-group__subtitle {
+    font-size: 1.32vw;
+    line-height: 1.68vw;
+    margin-bottom: 1.757vw;
+  }
+  .come-group__button {
+    font-size: 1.171vw;
+    line-height: 1.54vw;
+    padding: 1.3vw 2.41vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .startwork {
+    left: 0;
+    width: 100vw;
+    padding: 20vw 2.22vw 22.2vw 2.22vw;
+  }
+  .startwork__title {
+    font-size: 6.66vw;
+    line-height: 8.05vw;
+    margin-bottom: 4.44vw;
+  }
+  .startwork__subtitle {
+    width: 100%;
+    font-size: 3.88vw;
+    line-height: 4.72vw;
+    margin-bottom: 6.66vw;
+  }
+  video {
+    width: 100%;
+    height: 57vw;
+    margin-bottom: 4.44vw;
+  }
+  .startwork-about__container {
+    padding: 2.22vw 6.66vw 6.66vw 2.22vw;
+    margin-bottom: 4.44vw;
+  }
+  .startwork-about__title {
+    font-size: 5vw;
+    line-height: 6.38vw;
+    margin-bottom: 4.44vw;
+  }
+  .startwork-about__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 4.44vw;
+    list-style: inside;
+    line-height: 5.83vw;
+  }
+  .startwork-about__item {
+    margin-bottom: 4.44vw;
+  }
+  .startwork-about__item:last-child {
+    margin: 0;
+  }
+  .startwork__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .startwork__work-wrapper {
+    width: 100%;
+    padding: 2.22vw 2.22vw 4.44vw 2.22vw;
+    margin-bottom: 4.44vw;
+  }
+  .work-wrapper__title {
+    font-size: 5vw;
+    line-height: 6.38vw;
+    margin-bottom: 2.22vw;
+  }
+  .work-wrapper__text {
+    font-size: 3.88vw;
+    line-height: 4.72vw;
+  }
+  .startwork__come-group {
+    padding: 4.44vw 2.77vw 6.66vw 2.72vw;
+  }
+  .come-group__title {
+    font-size: 6.66vw;
+    line-height: 8.61vw;
+    margin-bottom: 2.22vw;
+  }
+  .come-group__subtitle {
+    font-size: 4.44vw;
+    line-height: 5.27vw;
+    margin-bottom: 4.44vw;
+    width: 85%;
+  }
+  .come-group__button {
+    font-size: 4.44vw;
+    line-height: 5.83vw;
+    width: 100%;
+    padding: 4.44vw 0;
+  }
+
+
+  /* Логотипы компаний */
+  .work-wrapper__logo-company img:nth-child(1){
+    display: block;
+    width: 25vw;
+    height: 10vw;
+  }
+  .work-wrapper__logo-company img:nth-child(2){
+    display: block;
+    width: 21vw;
+    height: 12vw;
+  }
+  .work-wrapper__logo-company img:nth-child(3){
+    display: block;
+    width: 7vw;
+    height: 7vw;
+  }
+  .work-wrapper__logo-company img:nth-child(4){
+    display: block;
+    width: 11vw;
+    height: 9vw;
+  }
+
+  /* Корректировки по логотипам студентов */
+
+.work-wrapper__student-work .student-work__link:nth-child(1){
+  width: 15vw;
+  height: 15vw;
+}
+.work-wrapper__student-work .student-work__link:nth-child(2){
+  width: 15vw;
+  height: 15vw;
+}
+.work-wrapper__student-work .student-work__link:nth-child(3){
+  width: 25vw;
+  height: 15vw;
+}
+.work-wrapper__student-work .student-work__link:nth-child(4){
+  width: 25vw;
+  height: 15vw;
+}
+.student-work__link img{
+  width: 100%;
+  height: 100%;
+} 
+}

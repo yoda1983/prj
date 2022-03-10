@@ -1,0 +1,136 @@
+{% extends 'main.html' %}
+{% load static %}
+
+    {% block title %}
+    <title>
+        Школа ITEC. Обучение программированию, верстке сайтов и английский для программистов.
+    </title>
+    <meta name="description" content="Школа ITEC - профессиональное обучение программированию, программирование серверов, создание БД.">
+    <meta name="keywords" content="Английский для программистов, верстка сайтов, программирование сервера, создание БД">
+    {% endblock %}
+
+    {% block css %}
+    <link rel="icon" href="{% static 'img/about__itec_white.svg' %}">
+    <link rel="stylesheet" href="{% static 'css/menu_for_about_itec.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about__itec.css' %}">
+    {% endblock %}
+
+
+    {% block content %}
+    <div class="about-itec" id="content">
+        <h1 class="about-itec__title">
+            Что такое ITEC?
+        </h1>
+        <div class="about-itec__subtitle">
+            Онлайн тур
+        </div>
+        <div class="about-itec__subsubtitle">
+            Находимся в центре Минска. Современные аудитории с видом <span>на Национальный олимпийский стадион «Динамо»</span>
+        </div>
+        <div id="slider-block" class="about-itec__online-tour">
+            <div class="online-tour__arrow-wrapper-right">
+                <div class="arrow__right">
+
+                </div>
+            </div>
+            <div class="online-tour__arrow-wrapper-left">
+                <div class="arrow__left">
+
+                </div>
+            </div>
+            <div class="about-itec__online-tour-wrapper">
+                <div id="chec_point_1" class="about-itec__online-tour-circle">
+
+                </div>
+                <div id="chec_point_2" class="about-itec__online-tour-circle">
+                    
+                </div>
+                <div id="chec_point_3" class="about-itec__online-tour-circle">
+                    
+                </div>
+                <div id="chec_point_4" class="about-itec__online-tour-circle">
+                    
+                </div>
+                <div id="chec_point_5" class="about-itec__online-tour-circle">
+                    
+                </div>
+                <div id="chec_point_6" class="about-itec__online-tour-circle">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="about-itec__advantages">
+            <div class="advantages">
+                <h2 class="advantages__title">
+                    Наша основная задача:
+                </h2>
+                <div class="advantages__text">
+                    Современные технологии стремительно развиваются каждый день, и главная цель каждого успешного человека — саморазвитие и решение поставленных задач. Предлагаем достичь этой цели вместе с нами! Мы не дадим «сухой» информации о том, как что-то делается сейчас, мы откроем Вам секрет, как научиться делать это самому!
+                </div>
+                <div class="advantages__text">
+                    Самое интересное, что мы вывели из многолетней практики преподавания — это то, что человек имеет свободную волю, а главное – собственный выбор, за который он, и только он персонально несет ответственность, как перед собой, так и перед средой его жизнедеятельности. Если вы сделали осознанный выбор и хотите стать профессионалом, то приходите к нам - мы поможем.
+                </div>
+            </div>
+            <div class="advantages">
+                <h2 class="advantages__title">
+                    Наши преимущества:
+                </h2>
+                <div class="advantages__text">
+                    Мы не привлекаем Вас высокими зарплатами со старта, а помогаем Вам полюбить новое дело и добиться успеха в нем
+                </div>
+                <div class="advantages__text">
+                    Основная задача нашей школы — дать обучающимся качественную базу знаний, которая поможет им стать профессионалами. Уверены, что такой подход к обучению - самый верный путь к успешной карьере в IT
+                </div>
+                <div class="advantages__text">
+                    Лучшие выпускники получат возможность попасть в программу StartWork и принять участие в разработке оплачиваемого проекта и возможность дальнейшего партнерства с нами.
+                </div>
+                <div class="advantages__text">
+                    Мы имеем возможность и необходимые инструменты для подготовки соискателей до трудоустройства в компанию его мечты.
+                </div>
+            </div>
+        </div>
+        <div class="about-itec__advantages">
+            <div class="advantages">
+                <h2 class="advantages__title">
+                    Начиная с 2012 года мы:
+                </h2>
+                <div class="advantages__text">
+                    Провели множество курсов, семинаров, мероприятий по разработке ПО, системному и бизнес-анализу, архитектуре ПО, wеb -разработке, разработке мобильных и wеb-приложений и другим направлениям в IT-сфере, и сейчас наша команда обладает уникальным опытом по обучению этим направлениям с нуля.
+                </div>
+            </div>
+            <div class="advantages">
+                <h2 class="advantages__title">
+                    Дружный коллектив:
+                </h2>
+                <div class="advantages__text">
+                    У нас Вы можете познакомиться с интересными людьми. Сходить в сауну или получить скидку на занятие в спортивном зале.
+                </div>
+            </div>
+        </div>
+        <div class="about-itec__form-wrapper">
+            <div class="form-wrapper__title">
+                Хотите стать частью тусовки ITEC?
+            </div>
+            <div class="form-wrapper__subtitle">
+                Запишитесь на консультацию и мы расскажем <span>как это можно сделать.</span>
+            </div>
+            <form action="{% url 'app_roma:about' %}" method="POST">
+                <div class="form">
+                    <div class="form__title">
+                        Номер телефона
+                    </div>
+                    {% include 'form.html' %}
+                    <button class="form__button">
+                        Записаться на консультацию
+                    </button>
+                    <div class="form__subtitle">
+                        Перезвоним в течение 5 минут
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    {% endblock %}
+    {% block script %}
+    <script src="{% static 'js/slider_event.js' %}"></script>
+    {% endblock %}

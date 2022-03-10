@@ -1,0 +1,211 @@
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background: #F7F8F3;
+}
+
+.teacher {
+  position: relative;
+  left: 14.63vw;
+  width: 85.3vw;
+  min-height: 100vh;
+  padding: 4.68vw 9.8vw 5.46vw 3.43vw;
+}
+
+.teacher__title {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5vw;
+  line-height: 3.02vw;
+  color: #2F5A53;
+  margin-bottom: 1.66vw;
+  width: 64%;
+}
+
+.teacher__subtitle {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  color: #1C1D25;
+  margin-bottom: 1.66vw;
+}
+
+.teacher__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  row-gap: 1.66vw;
+  -webkit-column-gap: 1vw;
+          column-gap: 1vw;
+}
+
+.teacher__card {
+}
+
+.teacher__card-img-wrapper {
+  width: 100%;
+  height: 24vw;
+  margin-bottom: 0.83vw;
+}
+
+.teacher__card-img {
+  width: 100%;
+  height: 100%;
+}
+
+.teacher__card-name {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.94vw;
+  line-height: 1.2vw;
+  color: #8E8E92;
+  margin-bottom: 0.83vw;
+}
+
+.teacher__card-line {
+  border-bottom: 0.054vw solid #C5C5C5;
+  margin-bottom: 0.83vw;
+}
+
+.teacher__card-work-name {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25vw;
+  line-height: 1.61vw;
+  color: #1C1D25;
+  margin-bottom: 0.83vw;
+}
+
+.teacher__card-work-name span {
+  display: block;
+}
+
+.teacher__card-experience {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.94vw;
+  line-height: 1.2vw;
+  color: #2F5A53;
+}
+
+@media screen and (max-width: 1366px) {
+  .teacher {
+    left: 20vw;
+    width: 79.43vw;
+    padding: 5.86vw 2.78vw 5.86vw 6vw;
+  }
+  .teacher__title {
+    font-size: 2.64vw;
+    line-height: 3.15vw;
+    margin-bottom: 1.171vw;
+    width: 69%;
+  }
+  .teacher__subtitle {
+    font-size: 1.171vw;
+    line-height: 1.54vw;
+    margin-bottom: 2.64vw;
+  }
+  .teacher__container{
+    -webkit-column-gap: 1.21vw;
+      column-gap: 1.21vw;
+    row-gap: 2.49vw;
+  }
+  .teacher__card-img-wrapper {
+    width: 100%;
+    height: 23vw;
+    margin-bottom: 1.171vw;
+  }
+  .teacher__card-name {
+    font-size: 1.32vw;
+    line-height: 1.68vw;
+    margin-bottom: 1.171vw;
+  }
+  .teacher__card-line {
+    border-bottom: 0.074vw solid #C5C5C5;
+    margin-bottom: 1.171vw;
+  }
+  .teacher__card-work-name {
+    font-size: 1.32vw;
+    line-height: 1.68vw;
+    margin-bottom: 1.171vw;
+  }
+  .teacher__card-experience {
+    font-size: 1.32vw;
+    line-height: 1.68vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .teacher {
+    left: 0;
+    width: 100vw;
+    padding: 20vw 2.22vw 22.2vw 2.22vw;
+  }
+  .teacher__title {
+    font-size: 6.66vw;
+    line-height: 8.05vw;
+    margin-bottom: 4.44vw;
+    width: 90%;
+  }
+  .teacher__subtitle {
+    font-size: 4.44vw;
+    line-height: 5.27vw;
+    margin-bottom: 6.66vw;
+  }
+  .teacher__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5.55vw;
+  }
+  .teacher__card {
+    width: 100%;
+    margin-bottom: 8.88vw;
+    margin-right: 0;
+  }
+  .teacher__card-img-wrapper {
+    width: 100%;
+    height: 70vw;
+    padding: 0 8vw;
+    margin-bottom: 2.22vw;
+  }
+  .teacher__card-name {
+    font-size: 5vw;
+    line-height: 6.38vw;
+    margin-bottom: 2.22vw;
+  }
+  .teacher__card-line {
+    margin-bottom: 0;
+    display: none;
+  }
+  .teacher__card-work-name {
+    font-size: 5vw;
+    line-height: 6.38vw;
+    margin-bottom: 2.22vw;
+  }
+  .teacher__card-experience {
+    font-size: 5vw;
+    line-height: 6.38vw;
+  }
+}

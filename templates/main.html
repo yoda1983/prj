@@ -1,0 +1,436 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block meta %}
+    <meta name="description" content="Записаться на курсы по программированию - HTML, CSS, JavaScript, REACT, Python, Jango, Backend, NodeJS | Стать программистом за 6 месяцев.">
+    <meta name="keywords" content="Курсы программирования, программирование онлайн, обучение HTML, курс javascript, курс Python">
+    {% endblock %}
+    {% block title %}
+    <title>
+        Курсы по программированию - HTML, CSS, JS, REACT, Python, Jango, Backend, NodeJS | Обучение в центре Минска | Стадион Динамо
+    </title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/null_for_templates.css' %}">
+    {% block css %}
+    <link rel="icon" href="{% static 'img/itec_logo_icon_img.jpeg' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/menu_for_main_page.css' %}">
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/form_window_for_templates.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mobile_menu_for_templates.css' %}">
+
+</head>
+<body id="body">
+    <div class="container">
+        <div class="container__menu-mobile">
+                <div class="menu__logo-mobile" id="menu__logo-mobile">
+                    <a href="{% url 'app_roma:index' %}" class="menu__logo-link">
+                        <p id="menu__logo">
+                            <span style="color: #A20C20">
+                                IT <span style="color: #2F5A53">-skills</span>
+                            </span> 
+<!--                                 Education complex-->
+                        </p>
+                    </a>
+                <div class="header__burger" id="burger">
+                    <span>
+                        
+                    </span>
+                </div>
+                </div>
+            <nav  id = "hidden-menu" class="header__menu" hidden>
+                <ul class="header__list">
+                    <li>
+                        <a href="{% url 'app_roma:index' %}" class="header__link mobile__main">
+                            Главная
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'app_roma:list_courses' %}" class="header__link mobile__course">
+                            Каталог курсов
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'app_roma:edu_procces' %}" class="header__link mobile__education">
+                            Процесс обучения
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'app_roma:start_work' %}" class="header__link mobile__startwork">
+                            StartWork
+                        </a>
+                    </li>  
+                    <li>
+                        <a href="{% url 'app_roma:near_groups' %}" class="header__link mobile__groups">
+                            Ближайшие старты групп
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'app_roma:teachers' %}" class="header__link mobile__teacher">
+                            Преподаватели
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'app_roma:about' %}" class="header__link mobile__about">
+                            Что такое ITEC?
+                        </a>
+                    </li>
+                </ul>
+                <div class="header__menu-contact">
+                    <div class="header__menu-text">
+                        Мы всегда онлайн и ждём Ваше сообщение
+                    </div>
+                    <div class="header__menu-sosial-network">
+                        <a href="https://t.me/itec_info" class="header__menu-social-link">
+                            <img src="{% static 'img/telegramm.svg' %}" alt="telegramm" class="header__menu-social-img">
+                        </a>
+                        <a href="https://instagram.com/itec.by?igshid=1t4qsqm9b67y2" class="header__menu-social-link">
+                            <img src="{% static 'img/instagram.png' %}" alt="viber" class="header__menu-social-img">
+                        </a>
+                        <a href="#" class="header__menu-social-link">
+                            <img src="{% static 'img/skype.svg' %}" alt="skype" class="header__menu-social-img">
+                        </a>
+                        <a href="https://www.facebook.com/ITEC-School-109118694282830/?modal=suggested_action&notif_id=1606987146186544&notif_t=page_user_activity&ref=notif" class="header__menu-social-link">
+                            <img src="{% static 'img/facebook.svg' %}" alt="facebook" class="header__menu-social-img">
+                        </a>
+                        <a href="https://vk.com/public198938340" class="header__menu-social-link">
+                            <img src="{% static 'img/vk.svg' %}" alt="vk" class="header__menu-social-img">
+                        </a>
+                    </div>
+                    <div class="header__menu-telephone">
+                        <div class="header__menu-telephone-text">
+                            Или звоните:
+                        </div>
+                        <div class="header__menu-telephone-number">
+                            +375 (29) 639 11 19 
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container__menu">
+            <div class="menu__logo-wrapper">
+                    <div class="menu__logo">
+                        <a href="{% url 'app_roma:index' %}" class="menu__logo-link">
+                            <span style="color:#B00D23">IT</span><span style="color:#2F5A53 ">-skills</span>
+                        </a>
+                    </div>
+                </div>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="{% url 'app_roma:index' %}" class="menu__link main__page">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="{% url 'app_roma:list_courses' %}" class="menu__link catalog__course">
+                            Каталог курсов
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="{% url 'app_roma:edu_procces' %}" class="menu__link education__menu">
+                            Процесс обучения
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="{% url 'app_roma:start_work' %}" class="menu__link start__work-menu">
+                            StartWork
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="{% url 'app_roma:near_groups' %}" class="menu__link start__group-menu">
+                            Ближайшие старты групп
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="{% url 'app_roma:teachers' %}" class="menu__link teacher__menu">
+                            Преподаватели
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="{% url 'app_roma:about' %}" class="menu__link about__itec-menu">
+                             IT-skills -это
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu__footer">
+                <div class="menu__text">
+                    Мы всегда онлайн и ждем
+                </div>
+                <div class="menu__text">
+                    Ваше сообщение
+                </div>
+                <div class="menu__social-wrapper">
+                    <a href="https://t.me/itec_info" class="menu__social-link">
+                        <img src="{% static 'img/telegramm.svg' %}" alt="" class="social__link-img">
+                    </a>
+                    <a href="https://instagram.com/itec.by?igshid=1t4qsqm9b67y2" class="menu__social-link">
+                        <img src="{% static 'img/instagram.png' %}" alt="" class="social__link-img">
+                    </a>
+                    <a href="#" class="menu__social-link">
+                        <img src="{% static 'img/skype.svg' %}" alt="" class="social__link-img">
+                    </a>
+                    <a href="https://www.facebook.com/ITEC-School-109118694282830/?modal=suggested_action&notif_id=1606987146186544&notif_t=page_user_activity&ref=notif" class="menu__social-link">
+                        <img src="{% static 'img/facebook.svg' %}" alt="" class="social__link-img">
+                    </a>
+                    <a href="https://vk.com/public198938340" class="menu__social-link">
+                        <img src="{% static 'img/vk.svg' %}" alt="" class="social__link-img">
+                    </a>
+                </div>
+                <div class="menu__text">
+                    Или звоните:
+                </div>
+                <div class="menu__text telefon">
+                    +375 (29) 639 11 19
+                </div>
+                <div class="menu__right">
+                    &copy; ITEC, 2020
+                </div>
+            </div>
+        </div>
+        {% if con %}
+            {% if con == 1 %}
+            <div class="container__form-window">
+                <div class="form-window__block">
+                    <div class="form-window__image">
+                        <img src="{% static 'img/form__model-window.svg' %}" alt="" class="form-window__img">
+                    </div>
+                    <div class="form-window__text-wrapper">
+                        <div class="form-window__title">
+                            Ваша заявка принята
+                        </div>
+                        <div class="form-window__subtitle">
+                            Мы перезвоним Вам в ближайшее время для уточнения деталей
+                        </div>
+                    </div>
+                    <form action="#">
+                        <div class="form-window__form-wrapper">
+                            <button class="form-window__button">
+                                Окей
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            {% elif con == 2 %}
+            <div class="container__form-window">
+                <div class="form-window__block">
+                    <div class="form-window__image">
+                        <img src="{% static 'img/form__image-application.svg' %}" alt="" class="form-window__img">
+                    </div>
+                    <div class="form-window__text-wrapper">
+                        <div class="form-window__title">
+                            Введен некорректный номер
+                        </div>
+                        <div class="form-window__subtitle">
+                            Введите номер в формате +375__ ___ ___
+                        </div>
+                    </div>
+                    <form action="#">
+                        <div class="form-window__form-wrapper">
+                            <button class="form-window__button">
+                                Окей
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            {% else %}
+            <div class="container__form-window">
+                <div class="form-window__block">
+                    <div class="form-window__image">
+                        <img src="{% static 'img/form__image-application.svg' %}" alt="" class="form-window__img">
+                    </div>
+                    <div class="form-window__text-wrapper">
+                        <div class="form-window__title">
+                            Ваши заявки приняты
+                        </div>
+                        <div class="form-window__subtitle">
+                            Ожидайте,с вами свяжутся
+                        </div>
+                    </div>
+                    <form action="#">
+                        <div class="form-window__form-wrapper">
+                            <button class="form-window__button">
+                                Окей
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            {% endif %}
+        {% endif %}
+        {% block content %}
+        <div class="container__content" id="content">
+            <a href="{% url 'app_roma:list_courses' %}" class="content__link">
+                Каталог курсов
+            </a>
+            <div class="content__header">
+                <div class="header">
+                    <h1 class="header__title">
+                        Получи <span>IT-специальность за 5 месяцев</span>
+                        с возможностью трудоустройства
+                        в <span>EPAM, Wargaming, IBA, Issoft и др.</span>
+                    </h1>
+                </div>
+                <div class="header__circle">
+                    <div class="circle">
+                        <div class="circle__text">
+                            Осталось мест
+                        </div>
+                        <div class="circle__text">
+                            40 из 50
+                        </div>
+                        <div class="circle__text">
+                            со скидкой
+                        </div>
+                    </div>
+                </div>
+                <div class="header__line">
+                    <img src="{% static 'img/header_line_img.svg' %}" alt="" class="header__line-img">
+                </div>
+            </div>
+            <div class="content__form">
+                <div class="form__wrapper">
+                    <form action="{% url 'app_roma:index' %}" method="POST">
+                        <div class="form__title">
+                            Запишитесь на <span>бесплатную</span> профориентацию 
+                        </div>
+                        {% include 'form.html' %}
+                        <button class="form__button" value=" ">Записаться</button>
+                    </form>
+                    <div class="form__text">
+                        Поможем определиться со специальностью. Ответим на все вопросы про обучение.
+                    </div>
+                </div>
+            </div>
+            <div class="content__advantages">
+                <div class="advantages__wrapper">
+                    <div class="advantages__text">
+                        <div class="advantages__title">
+                        Обучение на практике
+                        </div>
+                        <div class="advantages__subtitle">
+                        Прямо на занятиях Вы будете сами писать код и закреплять теорию на практике.
+                        </div>
+                    </div>
+                    <div class="advantages__image">
+                        <img src="{% static 'img/education_practice.svg' %}" alt="" class="advantages__img practice">
+                    </div>
+                </div>
+                <div class="advantages__wrapper">
+                    <div class="advantages__text">
+                        <div class="advantages__title">
+                            Онлайн и офлайн группы
+                        </div>
+                        <div class="advantages__subtitle">
+                            Дома в уютном халате или в современной аудитории с группой? Выбирайте сами!
+                        </div>
+                    </div>
+                    <div class="advantages__image">
+                        <img src="{% static 'img/education_offline.svg' %}" alt="" class="advantages__img offline">
+                    </div>
+                </div>
+                <div class="advantages__wrapper">
+                    <div class="advantages__text">
+                        <div class="advantages__title">
+                            От лучших разработчиков <span>СНГ и Европы</span>
+                        </div>
+                        <div class="advantages__subtitle">
+                            Наши преподаватели работают <span>в крупнейших IT-компаниях мира.</span>
+                        </div>
+                    </div>
+                    <div class="advantages__image">
+                        <img src="{% static 'img/education_best.svg' %}" alt="" class="advantages__img best">
+                    </div>
+                </div>
+            </div>
+            <h2 class="content__title">
+                Кем Вы станете после обучения?
+            </h2>
+            <div class="content__training">
+                <div class="trainig__container">
+                    <h3 class="training__title">
+                        Front-end разработчик
+                    </h3>
+                    <div class="training__line">
+
+                    </div>
+                    <div class="training__wrapper">
+                        <div class="training__text-wrapper">
+                            <div class="training__text">
+                                5 283 вакансий
+                            </div>
+                            <div class="training__text">
+                                Открыто прямо сейчас
+                            </div>
+                        </div>
+                        <div class="training__text-wrapper">
+                            <div class="training__text">
+                                $1 700 
+                            </div>
+                            <div class="training__text">
+                                Средняя ЗП
+                            </div>
+                        </div>
+                    </div>
+                    <div class="training__fotter">
+                        <a href="{% url 'app_roma:list_courses' %}#front" class="training__button">
+                            Подробнее о специальности
+                        </a>
+                        <div class="training__image">
+                            <img src="{% static 'img/main_html.svg' %}" alt="" class="html">
+                            <img src="{% static 'img/main_form_img.svg' %}" alt="" class="training__front">
+                        </div>
+                    </div>
+                </div>
+                <div class="trainig__container">
+                    <h3 class="training__title">
+                        Back-end разработчик
+                    </h3>
+                    <div class="training__line">
+
+                    </div>
+                    <div class="training__wrapper">
+                        <div class="training__text-wrapper">
+                            <div class="training__text">
+                                5 907 вакансий
+                            </div>
+                            <div class="training__text">
+                                Открыто прямо сейчас
+                            </div>
+                        </div>
+                        <div class="training__text-wrapper">
+                            <div class="training__text">
+                                $1 890  
+                            </div>
+                            <div class="training__text">
+                                Средняя ЗП
+                            </div>
+                        </div>
+                    </div>
+                    <div class="training__fotter">
+                        <a href="{% url 'app_roma:list_courses' %}#back" class="training__button">
+                            Подробнее о специальности
+                        </a>
+                        <div class="training__image">
+                            <img src="{% static 'img/main_backend.svg' %}" alt="" class="backend">
+                            <img src="{% static 'img/main_form_backend.svg' %}" alt="" class="training__back">
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+        {% endblock %}
+    </div>
+    <script src="{% static 'js/for_mobile_menu.js' %}"></script>
+<!--    <script src="{% static 'js/form_window_for_templates.js' %}"></script>-->
+    {% block script %}
+    {% endblock %}
+</body>
+</html>

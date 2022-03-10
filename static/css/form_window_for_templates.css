@@ -1,0 +1,214 @@
+.container__form-window {
+z-index: 50;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(28, 29, 37, 0.7);
+display: block;
+-webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
+}
+
+.form-window__block {
+width: 22.97vw;
+background: #FBFCF7;
+-webkit-box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+border-radius: 10px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+padding: 0.83vw 1.04vw 1.25vw 1.04vw;
+position: absolute;
+left: 40%;
+top: 30%;
+}
+
+.form-window__image {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+width: 2.92vw;
+height: 2.92vw;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+margin-bottom: 0.416vw;
+}
+
+.form-window__img {
+width: 100%;
+height: 100%;
+}
+
+.form-window__text-wrapper {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+margin-bottom: 0.83vw;
+}
+
+.form-window__title {
+font-family: IBM Plex Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 1.25vw;
+line-height: 1.61vw;
+color: #1C1D25;
+margin-bottom: 0.83vw;
+text-align: center;
+}
+
+.form-window__subtitle {
+font-family: IBM Plex Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 0.83vw;
+line-height: 120%;
+color: #1C1D25;
+text-align: center;
+}
+
+.form-window__form-wrapper {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+
+.form-window__button {
+background: #B00D23;
+border-radius: 5px;
+font-family: IBM Plex Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 0.83vw;
+line-height: 1.09vw;
+color: #FFFFFF;
+padding: 0.83vw 1.66vw;
+}
+
+@media screen and (max-width: 1366px) {
+.form-window__block {
+    width: 32.30vw;
+    padding: 1.171vw 1.757vw 1.757vw 1.757vw;
+}
+.form-window__image {
+    width: 4.1vw;
+    height: 4.1vw;
+    margin-bottom: 0.59vw;
+}
+.form-window__text-wrapper {
+    margin-bottom: 1.171vw;
+}
+.form-window__title {
+    font-size: 1.757vw;
+    line-height: 2.27vw;
+    margin-bottom: 0.83vw;
+}
+.form-window__subtitle {
+    font-size: 1.171vw;
+    line-height: 120%;
+}
+.form-window__button {
+    font-size: 1.171vw;
+    line-height: 1.54vw;
+    padding: 1.171vw 2.342vw;
+}
+}
+
+@media screen and (max-width: 768px) {
+.container__form-window {
+    width: 100%;
+    padding: 15vw 2.22vw 15vw 2.22vw;
+    overflow: scroll;
+}
+.form-window__block {
+    width: 100%;
+    padding: 4.44vw 3.05vw 6.66vw 3.05vw;
+    left: 0;
+    top: 0;
+    position: relative;
+    margin: 0 auto;
+}
+.form-window__image {
+    width: 15vw;
+    height: 15vw;
+    margin-bottom: 2.22vw;
+}
+.form-window__text-wrapper {
+    margin-bottom: 4.44vw;
+}
+.form-window__title {
+    font-size: 6vw;
+    line-height: 8.61vw;
+    margin-bottom: 4.44vw;
+}
+.form-window__subtitle {
+    font-size: 4.44vw;
+}
+.form-window__button {
+    font-size: 4.44vw;
+    line-height: 5.83vw;
+    padding: 4.44vw 8.88vw;
+}
+}
+
+/* @media (orientation: landscape) and (max-width: 768px){
+    .container__form-window {
+        width: 100%;
+        padding: 5vw 2.22vw 5vw 2.22vw;
+        overflow: scroll;
+    }
+    .form-window__block {
+        width: 70%;
+        padding: 4.44vw 3.05vw 5.66vw 3.05vw;
+        left: 0;
+        top: 0;
+        position: relative;
+        margin: 0 auto;
+    }
+    .form-window__image {
+        width: 10vw;
+        height: 10vw;
+        margin-bottom: 2.22vw;
+    }
+    .form-window__text-wrapper {
+        margin-bottom: 2.44vw;
+    }
+    .form-window__title {
+        font-size: 4vw;
+        line-height: 1.61vw;
+        margin-bottom: 2.44vw;
+    }
+    .form-window__subtitle {
+        font-size: 2.44vw;
+    }
+    .form-window__button {
+        font-size: 2.44vw;
+        line-height: 3.83vw;
+        padding: 2vw 3vw;
+    }
+} */

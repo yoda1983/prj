@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подробнее о специальности</title>
+    <link rel="stylesheet" href="css/null_for_templates.css">
+    <link rel="stylesheet" href="css/menu_for_error.css">
+    <link rel="stylesheet" href="css/about__speciality.css">
+    <link rel="stylesheet" href="css/mobile_menu_for_templates.css">
+</head>
+<body id="body">
+    <div class="container">
+        <div class="container__menu-mobile">
+            <div class="menu__logo-mobile" id="menu__logo-mobile">
+                <p id="menu__logo">
+                    <span>
+                        ITEC
+                    </span> 
+                    Education complex
+                </p>
+                <div class="header__burger" id="burger">
+                    <span>
+                        
+                    </span>
+                </div>
+            </div>
+            <nav  id = "hidden-menu" class="header__menu" hidden>
+                <ul class="header__list">
+                    <li>
+                        <div class="header__image">
+                            <img class= "nav__block-img" src="./img/main__gray.svg" alt="">
+                        </div>
+                        <a href="#" class="header__link">
+                            Главная
+                        </a>
+                    </li>
+                    <li>
+                        <div class="header__image">
+                            <img class= "nav__block-img" src="./img/course.svg" alt="">
+                        </div>
+                        <a href="#" class="header__link">
+                            Каталог курсов
+                        </a>
+                    </li>
+                    <li>
+                        <div class="header__image">
+                            <img class= "nav__block-img" src="./img/education.svg" alt="">
+                        </div>
+                        <a href="#" class="header__link">
+                            Процесс обучения
+                        </a>
+                    </li>
+                    <li>
+                        <div class="header__image">
+                            <img class= "nav__block-img" src="./img/startwork.svg" alt="">
+                        </div>
+                        <a href="#" class="header__link">
+                            StartWork
+                        </a>
+                        <div class="header__image">
+                            <img class="nav__block-img_fire" src="./img/image_fire.png" alt="fire">
+                        </div>
+                    </li>  
+                    <li>
+                        <div class="header__image">
+                            <img class= "nav__block-img" src="./img/start_group.svg" alt="">
+                        </div>
+                        <a href="#" class="header__link">
+                            Ближайшие старты групп
+                        </a>
+                        <div class="header__image">
+                            <img class="nav__block-img_fire" src="./img/image_fire.png" alt="fire">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="header__image">
+                            <img class= "nav__block-img" src="./img/teacher.svg" alt="">
+                        </div>
+                        <a href="#" class="header__link">
+                            Преподаватели
+                        </a>
+                    </li>
+                    <li>
+                        <div class="header__image">
+                            <img class= "nav__block-img" src="./img/what_about_itec.svg" alt="">
+                        </div>
+                        <a href="#" class="header__link">
+                            Что такое ITEC?
+                        </a>
+                    </li>
+                </ul>
+                <div class="header__menu-contact">
+                    <div class="header__menu-text">
+                        Мы всегда онлайн и ждём Ваше сообщение
+                    </div>
+                    <div class="header__menu-sosial-network">
+                        <a href="#" class="header__menu-social-link">
+                            <img src="img/telegramm.svg" alt="telegramm">
+                        </a>
+                        <a href="#" class="header__menu-social-link">
+                            <img src="img/viber.svg" alt="viber">
+                        </a>
+                        <a href="#" class="header__menu-social-link">
+                            <img src="img/skype.svg" alt="skype">
+                        </a>
+                        <a href="#" class="header__menu-social-link">
+                            <img src="img/facebook.svg" alt="facebook">
+                        </a>
+                        <a href="#" class="header__menu-social-link">
+                            <img src="img/vk.svg" alt="vk">
+                        </a>
+                    </div>
+                    <div class="header__menu-telephone">
+                        <div class="header__menu-telephone-text">
+                            Или звоните:
+                        </div>
+                        <div class="header__menu-telephone-number">
+                            +375 (44) 202 03 27 
+                        </div>
+                    </div>
+            </nav>
+        </div>
+        <div class="container__menu">
+            <a href="#" class="menu__logo-link">
+                <div class="menu__logo">
+                    <span>ITEC</span> Education complex
+                </div>
+            </a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="{% url 'app_roma:index' %}" class="menu__link main__page">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="{% url 'app_roma:list_courses' %}" class="menu__link catalog__course">
+                            Каталог курсов
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="{% url 'app_roma:edu_procces' %}" class="menu__link education__menu">
+                            Процесс обучения
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="{% url 'app_roma:start_work' %}" class="menu__link start__work-menu">
+                            StartWork
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="{% url 'app_roma:near_groups' %}" class="menu__link start__group-menu">
+                            Ближайшие старты групп
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="{% url 'app_roma:teachers' %}" class="menu__link teacher__menu">
+                            Преподаватели
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="{% url 'app_roma:about' %}" class="menu__link about__itec-menu">
+                            Что такое ITEC?
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu__footer">
+                <div class="menu__text">
+                    Мы всегда онлайн и ждем
+                </div>
+                <div class="menu__text">
+                    Ваше сообщение
+                </div>
+                <div class="menu__social-wrapper">
+                    <a href="#" class="menu__social-link">
+                        <img src="{% static 'img/telegramm.svg' %}" alt="" class="social__link-img">
+                    </a>
+                    <a href="#" class="menu__social-link">
+                        <img src="{% static 'img/viber.svg' %}" alt="" class="social__link-img">
+                    </a>
+                    <a href="#" class="menu__social-link">
+                        <img src="{% static 'img/skype.svg' %}" alt="" class="social__link-img">
+                    </a>
+                    <a href="#" class="menu__social-link">
+                        <img src="{% static 'img/facebook.svg' %}" alt="" class="social__link-img">
+                    </a>
+                    <a href="#" class="menu__social-link">
+                        <img src="{% static 'img/vk.svg' %}" alt="" class="social__link-img">
+                    </a>
+                </div>
+                <div class="menu__text">
+                    Или звоните:
+                </div>
+                <div class="menu__text telefon">
+                    +375 (29) 123 45 67
+                </div>
+                <div class="menu__right">
+                    &copy; ITEC, 2020
+                </div>
+            </div>
+        </div>
+        <div class="container__speciality" id="content">
+                <a href="#" class="speciality__link-back">
+                    &larr; Вернуться назад
+                </a>
+                <h1 class="speciality__title">
+                    PYTHON
+                </h1>
+                <div class="speciality__wrapper-text">
+                    <p class="speciality__text">
+                        Решили наконец уйти в IT? Пожалуй, первое с чем у Вас, будущего айтишника, могут возникнуть сложности — это выбор области, в которой Вы будете строить свою дальнейшую карьеру. Frontend- или backend-разработка? А может стать специалистом data science или аналитиком данных? Или же начать свой путь в IT с тестирования? Вариантов много, только вот, что же выбрать? Определиться, несомненно, поможет язык программирования. Однако и тут Вам снова придется выбирать. Ведь язык программирования не один: JavaScript, PHP, C++, Python, Java и многие другие.
+                    </p>
+                    <p class="speciality__text about">
+                        Да, языков много, но давайте, для начала, разберемся только один из них. И начнем мы, пожалуй, с Python. А на рассмотрение выдвинем следующие вопросы:
+                    </p>
+                    <p class="speciality__text speciality__text-before">
+                        Особенности Python
+                    </p>
+                    <p class="speciality__text speciality__text-before">
+                        Сферы применения Python
+                    </p>
+                    <p class="speciality__text speciality__text-before">
+                        Ситуация на рынке труда
+                    </p>
+                    <p class="speciality__text speciality__text-before">
+                        Стоит ли новичкам выбрать Python в качестве первого языка программирования?
+                    </p>
+                </div>
+                <h2 class="speciality__subtitle">
+                    Особенности Python
+                </h2>
+                <div class="speciality__wrapper-text">
+                    <p class="speciality__text">
+                        Немного теории: Python — это высокоуровневый язык программирования общего назначения, ориентированный на повышение производительности разработчика и читаемости кода.
+                    </p>
+                    <p class="speciality__text">
+                        Непонятно? Давайте разбираться!
+                    </p>
+                    <p class="speciality__text">
+                        Высокоуровневый язык программирования означает, что писать код на Python Вы будете при помощи простых слов на английском языке, т.е. код будет понятен и легок к восприятию именно потому, что написан обычными, человеческими словами, а не какими-нибудь иероглифами машинного кода.
+                    </p>
+                    <p class="speciality__text">
+                        Само собой, Python обладает своим синтаксисом, т.е. правилами написания команд. Однако синтаксис этого языка прост, что позволяет программисту сконцентрировать свое внимание не на языке, а именно на решении поставленных задач. Чтение кода программы, написанной на Python, чем-то похоже на чтение текста на английском языке, но написанном по строгим правилам.
+                    </p>
+                    <p class="speciality__text">
+                        Язык общего назначения — это говорит о том, что Python универсальный и его можно использовать для создания чего угодно. Действительно, областей, в которых применяется этот язык программирования множество.
+                    </p>
+                    <p class="speciality__text">
+                        Еще одна важная особенность Python — это наличие большого количества различных библиотек, т.е. готовых инструментов для решения определенных задач. Изобретать велосипед Вам не придется! Приведем несколько библиотек для примера:
+                    </p>
+                    <p class="speciality__text speciality__text-before">
+                        NumPy — библиотека для сложных математических вычислений и работы в области искусственного интеллекта и машинного обучения;
+                    </p>
+                    <p class="speciality__text speciality__text-before">
+                        Pillow — библиотека для обработки изображений;
+                    </p>
+                    <p class="speciality__text speciality__text-before">
+                        Pygame — библиотека для создания не сложных 2D игр. Не будет лишним отметить, что на Python не создают большие игры, однако с созданием прототипа или реализацией некоторых частей таких игр Python справится;
+                    </p>
+                    <p class="speciality__text speciality__text-before">
+                        Pandas — библиотека для обработки и анализа данных.
+                    </p>
+                </div>
+                <h2 class="speciality__subtitle">
+                    Применение Python
+                </h2>
+                <div class="speciality__wrapper-text">
+                    <p class="speciality__text">
+                        Как уже было сказано выше, Python — язык общего назначения и область его применения весьма обширна:
+                    </p>
+                    <p class="speciality__text speciality__text-before">
+                        web-разработка (YouTube и Instagram написаны на Python);
+                    </p>
+                    <p class="speciality__text speciality__text-before">
+                        искусственный интеллект и машинное обучение;
+                    </p>
+                    <p class="speciality__text speciality__text-before">
+                        data science;
+                    </p>
+                    <p class="speciality__text speciality__text-before">
+                        автоматизация процессов (к примеру, в тестировании);
+                    </p>
+                    <p class="speciality__text speciality__text-before">
+                        создание баз данных, мобильных и ПК-приложений.
+                    </p>
+                    <p class="speciality__text">
+                        Для всего этого и много другого можно использовать Python!
+                    </p>
+                </div>
+                <h2 class="speciality__subtitle">
+                    Ситуация на рынке труда
+                </h2>
+                <div class="speciality__wrapper-text">
+                    <p class="speciality__text">
+                        Популярность Python росла, растет и будет расти! Если раньше знание Python было чаще всего дополнительным навыком программиста, то, к примеру, в 2019 году потребность именно Python-разработчиках на рынке труда выросла в 2-3 раза. А самое главное, разработчикам на языке Python готовы платить! К слову, средняя заработная плата начинающего Python разработчика (Junior Python developer) в странах СНГ составляет 1 000 $. В свою очередь, зарплата специалистов с опытом начинается от 2 500 $.
+                    </p>
+                </div>
+                <h2 class="speciality__subtitle">
+                    Стоит ли новичкам выбрать Python в качестве первого языка программирования?
+                </h2>
+                <div class="speciality__wrapper-text">
+                    <p class="speciality__text">
+                        Без сомнения! Ведь Python прост в освоении и подойдет в качестве первого языка программирования. Кроме того, универсальность Python открывает перед человеком, изучившим этот язык, множество дорог в различные сферы IT!
+                    </p>
+                </div>
+                <a href="#" class="speciality__link">
+                    Стать Python разработчиком
+                </a>
+        </div>
+    </div>
+    <script src="js/for_mobile_menu.js"></script>
+</body>
+</html>

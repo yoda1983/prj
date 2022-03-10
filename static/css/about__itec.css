@@ -1,0 +1,595 @@
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background: #F7F8F3;
+}
+
+.about-itec {
+  position: relative;
+  left: 14.63vw;
+  width: 85.3vw;
+  min-height: 100vh;
+  padding: 4.68vw 9.8vw 5.46vw 3.43vw;
+}
+
+.about-itec__title {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5vw;
+  line-height: 3.02vw;
+  color: #2F5A53;
+  margin-bottom: 1.66vw;
+}
+
+.about-itec__subtitle {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25vw;
+  line-height: 1.61vw;
+  color: #1C1D25;
+  margin-bottom: 0.83vw;
+}
+
+.about-itec__subsubtitle {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  color: #1C1D25;
+  margin-bottom: 1.66vw;
+}
+
+.about-itec__subsubtitle span {
+  display: block;
+}
+
+.about-itec__online-tour {
+  width: 100%;
+  height: 30.44vw;
+  margin-bottom: 1.66vw;
+  background-size: cover !important;
+  border-radius: 10px;
+  transition: ease-in 1s;
+  position: relative;
+}
+
+.about-itec__advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.66vw;
+}
+
+.advantages {
+  background: #FBFCF7;
+  -webkit-box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+          box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+  border-radius: 10px;
+  width: 35.21vw;
+  padding: 0.83vw 1.25vw 1.25vw 1.25vw;
+}
+
+.advantages__title {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25vw;
+  line-height: 1.61vw;
+  color: #1C1D25;
+  margin-bottom: 0.83vw;
+}
+
+.advantages__text {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  color: #1C1D25;
+  margin-bottom: 0.83vw;
+}
+
+.advantages__text:last-child {
+  margin: 0;
+}
+
+.about-itec__form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-wrapper__title {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.875vw;
+  line-height: 2.45vw;
+  text-align: center;
+  color: #2F5A53;
+  margin-bottom: 1.25vw;
+}
+
+.form-wrapper__subtitle {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.94vw;
+  line-height: 1.2vw;
+  text-align: center;
+  color: #1C1D25;
+  margin-bottom: 1.875vw;
+}
+
+.form-wrapper__subtitle span {
+  display: block;
+}
+
+.form {
+  width: 22.97vw;
+  background: #FBFCF7;
+  -webkit-box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+          box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+  border-radius: 10px;
+  padding: 1.25vw 2.81vw 1.66vw 2.81vw;
+}
+
+.form__title {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.94vw;
+  line-height: 1.2vw;
+  color: #1C1D25;
+  margin-bottom: 0.83vw;
+}
+
+.form__input {
+  border: 1px solid #1C1D25;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 7px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  width: 100%;
+  color: #000000;
+  padding: 0.88vw 1.25vw;
+  margin-bottom: 1.25vw;
+}
+
+.form__button {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.94vw;
+  line-height: 1.2vw;
+  color: #FFFFFF;
+  background: #B00D23;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.83vw 0;
+  margin-bottom: 0.416vw;
+}
+
+.form__subtitle {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  text-align: center;
+  color: #8E8E92;
+}
+
+.about-itec__online-tour-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0.83vw 0; /* 16px */
+  width: 100%;
+  height: 100%;
+}
+.about-itec__online-tour-circle{
+  width: 0.94vw;
+  height: 0.94vw;
+  margin-right: 0.52vw;
+  box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+  border-radius: 10px;
+  border: 1px solid #FFFFFF;
+  opacity: 0.7;
+}
+
+/* CSS for RIGHT ARROW */
+.online-tour__arrow-wrapper-right{
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 10%;
+}
+
+.arrow__right{
+  top: calc(50% - 2vw);
+  position: absolute;
+  right: 2.6vw;
+  width: 2vw; /* не актуальная */
+  height: 2vw; /* 30px */
+}
+.arrow__right:before,
+.arrow__right:after {
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-right: 0.3vw solid #FFFFFF; /* 10px */
+  border-bottom: 0.3vw solid #FFFFFF;
+  animation: arrow__right 3s linear infinite;
+}
+.arrow__right:after {
+  animation: arrow__right 3s linear infinite -1.5s;
+}
+@keyframes arrow__right {
+  0% {
+      opacity: 0;
+      transform: translate(-33px, 0) rotate(-45deg);
+  }
+  10%, 90% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;  
+      transform: translate(0, 0) rotate(-45deg);
+  }
+  100% {
+      opacity: 0;
+      transform: translate(33px, 0) rotate(-45deg);
+  }
+}
+
+/* Arrow right end */
+
+
+/* CSS for LEFT ARROW */
+.online-tour__arrow-wrapper-left{
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 10%;
+}
+
+.arrow__left{
+  top: calc(50% - 2vw);
+  position: absolute;
+  left: 2.6vw;
+  width: 2vw; /* не актуальная */
+  height: 2vw; /* 30px */
+}
+.arrow__left:before,
+.arrow__left:after {
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-left: 0.3vw solid #FFFFFF; /* 10px */
+  border-top: 0.3vw solid #FFFFFF;
+  animation: arrow__left 3s linear infinite;
+}
+.arrow__left:after {
+  animation: arrow__left 3s linear infinite -1.5s;
+}
+@keyframes arrow__left {
+  0% {
+      opacity: 0;
+      transform: translate(33px, 0) rotate(-45deg);
+  }
+  10%, 90% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;  
+      transform: translate(0, 0) rotate(-45deg);
+  }
+  100% {
+      opacity: 0;
+      transform: translate(-33px, 0) rotate(-45deg);
+  }
+}
+
+/* Arrow right end */
+
+@media screen and (max-width: 1366px) {
+  .about-itec {
+    left: 20vw;
+    width: 79.43vw;
+    padding: 5.86vw 2.78vw 5.86vw 6vw;
+  }
+  .about-itec__title {
+    font-size: 2.64vw;
+    line-height: 3.15vw;
+    margin-bottom: 2.342vw;
+  }
+  .about-itec__subtitle {
+    font-size: 1.757vw;
+    line-height: 2.27vw;
+    margin-bottom: 1.171vw;
+  }
+  .about-itec__subsubtitle {
+    font-size: 1.171vw;
+    line-height: 1.54vw;
+    margin-bottom: 2.342vw;
+  }
+  .about-itec__online-tour {
+    width: 100%;
+    height: 32vw;
+    margin-bottom: 1.757vw;
+  }
+  .about-itec__advantages {
+    margin-bottom: 1.757vw;
+  }
+  .advantages {
+    width: 34.4vw;
+    padding: 1.171vw 1.171vw 1.757vw 1.757vw;
+  }
+  .advantages__title {
+    font-size: 1.32vw;
+    line-height: 1.68vw;
+    margin-bottom: 0.59vw;
+  }
+  .advantages__text {
+    font-size: 1.02vw;
+    line-height: 1.24vw;
+    margin-bottom: 0.59vw;
+  }
+  .advantages__text:last-child {
+    margin: 0;
+  }
+  .form-wrapper__title {
+    font-size: 2.64vw;
+    line-height: 3.44vw;
+    margin-bottom: 1.757vw;
+  }
+  .form-wrapper__subtitle {
+    font-size: 1.32vw;
+    line-height: 1.68vw;
+    margin-bottom: 2.64vw;
+  }
+  .form {
+    width: 32.38vw;
+    padding: 1.757vw 3.95vw 2.342vw 3.95vw;
+  }
+  .form__title {
+    font-size: 1.32vw;
+    line-height: 1.68vw;
+    margin-bottom: 1.171vw;
+  }
+  .form__input {
+    border: 1px solid #C5C5C5;
+    font-size: 1.171vw;
+    line-height: 1.54vw;
+    padding: 1.2vw 1.757vw;
+    margin-bottom: 1.757vw;
+  }
+  .form__button {
+    font-size: 1.32vw;
+    line-height: 1.68vw;
+    padding: 1.171vw 0;
+    margin-bottom: 0.59vw;
+  }
+  .form__button:hover {
+    background: #A20C20;
+  }
+  .form__subtitle {
+    font-size: 1.171vw;
+    line-height: 1.54vw;
+  }
+  /* SLIDER */
+
+  .about-itec__online-tour-wrapper{
+    padding: 1.171vw 0; /* 16px */
+  }
+  .about-itec__online-tour-circle{
+    width: 1vw;
+    height: 1vw; /* 18px */
+    margin-right: 0.73vw; /* 10px */
+  }
+  /* .arrow__right{
+    top: calc(50% - 3.56vw);
+    width: 2vw;
+    height: 2vw;
+  }
+  .arrow__left{
+    top: calc(50% - 3.56vw);
+    width: 2vw; 
+    height: 2vw; 
+  } */
+
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-itec {
+    left: 0;
+    width: 100vw;
+    padding: 20vw 2.22vw 22.2vw 2.22vw;
+  }
+  .about-itec__title {
+    font-size: 6.66vw;
+    line-height: 8.05vw;
+    margin-bottom: 4.44vw;
+  }
+  .about-itec__subtitle {
+    font-size: 4.44vw;
+    line-height: 5.83vw;
+    margin-bottom: 2.22vw;
+  }
+  .about-itec__subsubtitle {
+    font-size: 3.88vw;
+    line-height: 4.72vw;
+    margin-bottom: 6.66vw;
+  }
+  .about-itec__subsubtitle span {
+    display: inline;
+  }
+  .about-itec__online-tour {
+    width: 100%;
+    height: 56.9vw;
+    margin-bottom: 6.66vw;
+  }
+  .about-itec__advantages {
+    margin-bottom: 4.44vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .advantages {
+    width: 100%;
+    padding: 2.22vw 2.22vw 4.44vw 2.22vw;
+    margin-bottom: 4.44vw;
+  }
+  .advantages:last-child {
+    margin: 0;
+  }
+  .advantages__title {
+    font-size: 5vw;
+    line-height: 6.38vw;
+    margin-bottom: 2.22vw;
+  }
+  .advantages__text {
+    font-size: 3.88vw;
+    line-height: 4.72vw;
+    margin-bottom: 2.22vw;
+  }
+  .advantages__text:last-child {
+    margin: 0;
+  }
+  .form-wrapper__title {
+    font-size: 6.66vw;
+    line-height: 7.2vw;
+    margin-bottom: 4.44vw;
+  }
+  .form-wrapper__subtitle {
+    font-size: 3.88vw;
+    line-height: 4.72vw;
+    margin-bottom: 4.44vw;
+  }
+  form {
+    width: 100%;
+  }
+  .form {
+    width: 100%;
+    padding: 4.44vw;
+  }
+  .form__title {
+    font-size: 3.88vw;
+    line-height: 5vw;
+    margin-bottom: 4.44vw;
+  }
+  .form__input {
+    font-size: 3.88vw;
+    line-height: 5vw;
+    padding: 4vw;
+    margin-bottom: 2.22vw;
+  }
+  .form__button {
+    font-size: 4.44vw;
+    line-height: 5.83vw;
+    padding: 4vw 0;
+    margin-bottom: 2.22vw;
+  }
+  .form__subtitle {
+    font-size: 3.88vw;
+    line-height: 4.72vw;
+  }
+  .about-itec__online-tour-circle{
+    width: 8px;
+    height: 8px; /* 18px */
+    margin-right: 0.73vw; /* 10px */
+  }
+  .arrow__right{
+    top: calc(50% - 4vw);
+    right: 3.5vw;
+    width: 4vw;
+    height: 4vw;
+  }
+  .arrow__right:before,
+  .arrow__right:after {
+  content: '';
+  border-right: 0.6vw solid #FFFFFF; /* 10px */
+  border-bottom: 0.6vw solid #FFFFFF;
+}
+  .arrow__left{
+    top: calc(50% - 4vw);
+    left: 3.5vw;
+    width: 4vw; 
+    height: 4vw; 
+  }
+
+  .arrow__left:before,
+  .arrow__left:after {
+  content: '';
+  border-left: 0.6vw solid #FFFFFF; /* 10px */
+  border-top: 0.6vw solid #FFFFFF;
+}
+@keyframes arrow__right {
+  0% {
+      opacity: 0;
+      transform: translate(-13px, 0) rotate(-45deg);
+  }
+  10%, 90% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;  
+      transform: translate(0, 0) rotate(-45deg);
+  }
+  100% {
+      opacity: 0;
+      transform: translate(13px, 0) rotate(-45deg);
+  } 
+}
+@keyframes arrow__left {
+  0% {
+      opacity: 0;
+      transform: translate(13px, 0) rotate(-45deg);
+  }
+  10%, 90% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;  
+      transform: translate(0, 0) rotate(-45deg);
+  }
+  100% {
+      opacity: 0;
+      transform: translate(-13px, 0) rotate(-45deg);
+  }
+}

@@ -1,0 +1,183 @@
+{% extends 'main.html' %}
+{% load static %}
+    {% block title %}
+    <title>Уникальная  методика обучения программированию.</title>
+    {% endblock %}
+    {% block meta%}
+    <meta name="description" content="Обучение программированию офлайн | Онлайн занятия по программированию | Видеокурсы | Пройденный материал в круглосуточном доступе">
+    <meta name="keywords" content="Курсы программирования, программирование онлайн, обучение HTML, курс javascript, курс Python">
+    {% endblock %}
+    {% block css %}
+    <link rel="icon" href="{% static 'img/education__white.svg' %}">
+    <link rel="stylesheet" href="{% static 'css/menu_for_education_process.css' %}">
+    <link rel="stylesheet" href="{% static 'css/education_process.css' %}">
+    {% endblock %}
+
+    {% block content %}
+        <div class="education" id="content">
+            <h1 class="education__title">
+                Как проходит обучение и что Вас ждёт после? 
+            </h1>
+            <iframe width="1100" height="500" src="https://www.youtube.com/embed/hHB3khb86OE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <div class="education__wrapper">
+                <div class="education__platform">
+                    <div class="platform__title">
+                        Своя обучающая платформа
+                    </div>
+                    <div class="platform__text">
+                        Нашей командой разработана обучающая платформа, которая делает процесс обучения проще и эффективнее. Доступ к ней получают все студенты.
+                    </div>
+                    <div class="platform__text">
+                        На протяжении всего обучения формируется <span>личная карточка</span> с оценками и достижениями. Эти данные станут отличным <span>резюме для HR-специалистов</span>, а также портфолио на фрилансе.
+                    </div>
+                </div>
+                <div class="education__platform">
+                    <div class="platform__title">
+                        Особенности платформы:
+                    </div>
+                    <ul class="platform__list">
+                        <li class="platform__item">
+                            Вся необходимая информация хранится в одном месте — учебные материалы, записи уроков, домашняя работа и многое другое.
+                        </li>
+                        <li class="platform__item">
+                            Связь с преподавателями и менеджерами.
+                        </li>
+                        <li class="platform__item">
+                            Чат группы.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h2 class="education__title">
+                Формат обучения выбираете сами
+            </h2>
+            <div class="education__format">
+                <div class="format">
+                    <div class="format__link offline red_format">
+                        Офлайн
+                    </div>
+                    <div class="format__link online">
+                        Онлайн в <span>разработке</span>
+                    </div>
+                    <div  class="format__link videocourse">
+                        Видеокурс в <span>разработке</span>
+                    </div>
+                </div>
+                <div class="format__line">
+
+                </div>
+                <div class="format__about">
+                    <div class="format__online"  >
+                        <div class="about__wrapper">
+                            <div class="about__title">
+                                Запись занятий
+                            </div>
+                            <div class="about__text">
+                                Всем студентам данного формата обучения будет предоставлен постоянный доступ к видеозаписям всех прошедших занятий. Это позволит лучше разобраться в упущенных моментах или освежить знания.
+                            </div>
+                        </div>
+                        <div class="about__wrapper">
+                            <div class="about__title">
+                                Экономия времени
+                            </div>
+                            <div class="about__text">
+                                Не нужно и в снег, и в зной бежать из дома или с работы, стоять в пробках или ехать в душном транспорте для того, чтобы не опоздать на занятие.
+                            </div>
+                        </div>
+                        <div class="about__wrapper">
+                            <div class="about__title">
+                                Географическая свобода
+                            </div>
+                            <div class="about__text">
+                                Другой город? Другая страна? Для онлайн-обучения это не имеет значения. Вам понадобится только ПК (телефон) и доступ в интернет.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="format__offline">
+                        <div class="about__wrapper">
+                            <div class="about__title title__offline">
+                                Живое общение
+                            </div>
+                            <div class="about__text">
+                                Непосредственное общение с наставником позволяет на месте обсудить вопросы, получить обратную связь, попросить совета. Преподаватель поддержит, укажет на сложные моменты, а также посоветует, что сделать, чтобы восполнить пробелы в знаниях.
+                            </div>
+                        </div>
+                        <div class="about__wrapper">
+                            <div class="about__title title__offline">
+                                Мотивация
+                            </div>
+                            <div class="about__text">
+                                Новые знания усваиваются намного быстрее и эффективнее, когда студенты взаимодействует друг с другом. Также нельзя прийти на занятие неподготовленным, необходимо вовремя и в полном объеме выполнять указания преподавателя, чтобы не отставать от группы. Здоровая конкуренция повышает общую успеваемость. 
+                            </div>
+                        </div>
+                        <div class="about__wrapper">
+                            <div class="about__title title__offline">
+                                Networking
+                            </div>
+                            <div class="about__text">
+                                Офлайн-курсы — это еще и новые знакомства. А совместная реализация жизнеспособного проекта — первый шаг на пути развития своего бизнеса или карьеры.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="format__videocourse" >
+                        <div class="about__wrapper">
+                            <div class="about__title">
+                                Свободный график
+                            </div>
+                            <div class="about__text">
+                                Для некоторых людей обучение в строго установленное время является невозможным из-за работы или других дел. В этом случае, видеокурсы станут лучшим решением, т.к. учиться можно в любое удобное время.
+                            </div>
+                        </div>
+                        <div class="about__wrapper">
+                            <div class="about__title">
+                                Постоянный доступ к материалам курса
+                            </div>
+                            <div class="about__text">
+                                Все видео из приобретенного курса доступны в любое время и с любого устройства (ПК, телефон, планшет).
+                            </div>
+                        </div>
+                        <div class="about__wrapper">
+                            <div class="about__title">
+                                Система «вопрос-ответ»
+                            </div>
+                            <div class="about__text">
+                                Возможность задавать вопросы преподавателю и получать помощь в решении возникших проблем.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="education__form-title">
+                Не определились со специальностью?
+            </div>
+            <div class="education__form-subtitle">
+                Запишитесь на бесплатную профориентацию 
+            </div>
+            <form action="{% url 'app_roma:edu_procces' %}" method="POST">
+                <div class="form__wrapper">
+                    <div class="education__form">
+                        <div class="education__form-text">
+                            Номер телефона
+                        </div>
+                        {% include 'form.html' %}
+                        <button class="education__form-button">
+                            Записаться на консультацию
+                        </button>
+                        <div class="education__form-text">
+                            Перезвоним в течение 5 минут
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="education__button-wrapper">
+                <a href="{% url 'app_roma:list_courses' %}" class="education__button">
+                    Выбрать курс
+                </a>
+            </div>
+        </div>
+        {% endblock %}
+
+    {% block script %}
+    <script src="{% static 'js/format_education_process.js' %}"></script>
+    {% endblock %}

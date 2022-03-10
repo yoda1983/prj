@@ -1,0 +1,99 @@
+{% extends 'main.html' %}
+{% load static %}
+
+    {% block title %}
+    <title>Учись программированию и зарабатывай.  Получить работу через StartWork. Старт Ворк.</title>
+    {% endblock %}
+    {% block meta %}
+    <meta name="description" content="Работа программистом за 3 месяца.  Найти работу в EPAM, Wargaming, IBA, Issof.">
+    <meta name="keywords" content="работа программистом, обучение с трудоустройством, обучение HTML,  изучение JS, изучение Python,изучение CSS, изучение JavaScript,  изучение REACT,  изучение Python,  изучение Jango, изучение Backend,изучение NodeJS">
+    {% endblock %}
+    {% block css %}
+    <link rel="icon" href="{% static 'img/start__work_white.svg' %}">
+    <link rel="stylesheet" href="{% static 'css/menu_for_startwork.css' %}">
+    <link rel="stylesheet" href="{% static 'css/startwork.css' %}">
+    {% endblock %}
+
+    {% block content %}
+        <div class="startwork" id="content">
+            <h1 class="startwork__title">
+                Уникальная программа StartWork
+            </h1>
+            <div class="startwork__subtitle">
+                Возможность поступить в StartWork будет доступна всем нашим студентам. Однако попасть туда смогут только лучшие. Отбор в программу проводится по результатам экзамена.
+            </div>
+<!--            <video src="#" poster="{% static 'img/startwork_img.jpg' %}">-->
+
+<!--            </video>-->
+            <div class="startwork-about__container">
+                <div class="startwork-about__title">
+                    Что вас ждет в StartWork?
+                </div>
+                <ul class="startwork-about__list">
+                    <li class="startwork-about__item">
+                        <span>
+                            Официальное трудоустройство
+                        </span>
+                    </li>
+                    <li class="startwork-about__item">
+                        Работа на реальных проектах, развитие и совершенствование полученных на курсах навыков в течение 3-х месяцев
+                    </li>
+                    <li class="startwork-about__item">
+                        Ежемесячная заработная плата, что позволит, как минимум, вернуть средства, потраченные на оплату курсов
+                    </li>
+                </ul>
+            </div>
+            <div class="startwork__wrapper">
+                <div class="startwork__work-wrapper">
+                    <div class="work-wrapper__title">
+                        Работа в ITEC
+                    </div>
+                    <div class="work-wrapper__text work-wrapper__text-margin">
+                        Выпускник StartWork может остаться работать у нас: стать партнером ITEC, присоединиться к существующим отделам разработки или создать свой на базе нашей компании. Кроме того, ITEC финансирует стартапы — крутые идеи никогда не останутся без внимания и спонсорства с нашей стороны!
+                    </div>
+                    <div class="work-wrapper__title">
+                        Работы наших студентов
+                    </div>
+                    <div class="work-wrapper__student-work">
+                        <a href="https://russo-balthotel.com/#/moscow-hotel" class="student-work__link">
+                            <img src="../static/img/logo_hotel.svg" alt="hotel">
+                        </a>
+                        <a href="https://oduvan-farm.com/index.html" class="student-work__link">
+                            <img src="../static/img/logo_oduvan.svg" alt="oduvan">
+                        </a>
+                        <a href="https://itec.by" class="student-work__link">
+                            <img src="../static/img/logo_student_work_itec.png" alt="ITEC">
+                        </a>
+                        <a href="https://stadium-dinamo.by/" class="student-work__link">
+                            <img src="../static/img/dinamo_logo.png" alt="Dinamo">
+                        </a>
+                    </div>
+                </div>
+                <div class="startwork__work-wrapper startwork__work-wrapper-height">
+                    <div class="work-wrapper__title">
+                        Работа в компании мечты
+                    </div>
+                    <div class="work-wrapper__text work-wrapper__text-margin">
+                        ITEC сотрудничает с множеством компаний, среди которых EPAM, Wargaming, IBA, Issof и др. Выпускник выбирает компанию, в которой хотел бы работать, а мы, в свою очередь, делаем так, чтобы желаемая должность была получена (узнаем необходимые требования, подготавливаем к собеседованию, даем рекомендации и т.п.)
+                    </div>
+                    <div class="work-wrapper__logo-company">
+                        <img src="../static/img/EPAM_logo.png" alt="EPAM">
+                        <img src="../static/img/Wargaming.png" alt="Wargaming">
+                        <img src="../static/img/issoft_logo.png" alt="Issoft">
+                        <img src="../static/img/IBA_logo.png" alt="IBA">
+                    </div>
+                </div>
+            </div>
+            <div class="startwork__come-group">
+                <div class="come-group__title">
+                    Хотите попасть в StartWork?
+                </div>
+                <div class="come-group__subtitle">
+                    Оставьте заявку на курс и получите работу мечты
+                </div>
+                <a href="{% url 'app_roma:list_courses' %}" class="come-group__button">
+                    Выбрать курс
+                </a>
+            </div>
+        </div>
+    {% endblock %}

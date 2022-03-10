@@ -1,0 +1,733 @@
+.training__button:hover{
+  background: #A20C20;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #F7F8F3;
+  position: relative;
+}
+
+.container__content {
+  position: relative;
+  left: 14.63vw;
+  width: 85.3vw;
+  min-height: 100vh;
+  padding: 4.68vw 9.8vw 5.46vw 3.43vw;
+}
+
+.content__link {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  color: #1C1D25;
+  border: 1px solid #B00D23;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0.57vw 1.25vw 0.57vw 1.25vw;
+}
+
+.content__link:hover {
+  background: #B00D23;
+  color: #FFFFFF;
+}
+
+.header {
+  margin-top: 2.135vw;
+  width: 75%;
+}
+
+.content__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-bottom: 2.5vw;
+}
+
+.header__title {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5vw;
+  line-height: 3.02vw;
+  color: #8E8E92;
+  margin-right: 5.8vw;
+}
+
+.header__title span {
+  color: #2F5A53;
+  font-weight: 600;
+}
+
+.header__circle {
+  margin-top: 0.57vw;
+  width: 8.96vw;
+  height: 8.96vw;
+  background: #2F5A53;
+  border-radius: 50%;
+  padding: 0.3125vw;
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.circle__text {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.94vw;
+  line-height: 1.042vw;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.circle .circle__text:nth-child(2) {
+  font-weight: 600;
+  font-size: 1.875vw;
+  line-height: 2.24vw;
+}
+
+.circle .circle__text:nth-child(3) {
+  font-weight: 500;
+  font-size: 0.94vw;
+  line-height: 1.042vw;
+  text-align: center;
+  color: #F8C765;
+}
+
+.header__line {
+  width: 15.05vw;
+  height: 5.57vw;
+  position: absolute;
+  right: 17.1vw;
+  top: 10.85vw;
+}
+
+.header__line-img {
+  width: 100%;
+  height: 100%;
+}
+
+.content__form {
+  margin-bottom: 1.66vw;
+}
+
+.form__wrapper {
+  padding: 0.83vw 1.35vw 1.25vw 1.66vw;
+  background: #FBFCF7;
+  -webkit-box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+          box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+  border-radius: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__title {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.94vw;
+  line-height: 1.15vw;
+  color: #1C1D25;
+  margin-bottom: 1.25vw;
+}
+
+.form__title span {
+  font-weight: 600;
+}
+
+.form__input {
+  border: 1px solid #C5C5C5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  color: #000000;
+  padding: 0.86vw 0.83vw 0.86vw 0.83vw;
+  width: 12.9vw;
+  margin-right: 0.416vw;
+}
+
+.form__button {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  color: #FFFFFF;
+  background: #B00D23;
+  border-radius: 5px;
+  padding: 0.9vw 1.6vw 0.9vw 1.6vw;
+}
+.form__button:hover{
+  background: #A20C20;
+  cursor: pointer;
+}
+
+.form__text {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.83vw;
+  line-height: 1.15vw;
+  color: #8E8E92;
+  width: 9.63vw;
+  margin-left: 1.25vw;
+}
+
+.content__advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5.42vw;
+}
+
+.advantages__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  width: 22.97vw;
+  height: 5.83vw;
+  background: #FBFCF7;
+  -webkit-box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+          box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+  border-radius: 10px;
+  padding: 0.83vw 0.52vw 1.25vw 0.83vw;
+}
+
+.advantages__title {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.94vw;
+  line-height: 1.2vw;
+  color: #1C1D25;
+  margin-bottom: 0.83vw;
+}
+
+.advantages__subtitle {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  color: #8E8E92;
+}
+
+.advantages__subtitle span {
+  display: block;
+}
+
+.content__advantages .advantages__wrapper:nth-child(3) {
+  padding-right: 0;
+}
+
+.practice {
+  width: 3.96vw;
+}
+
+.offline {
+  width: 3.29vw;
+}
+
+.best {
+  width: 3.12vw;
+}
+
+.content__title {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.875vw;
+  line-height: 2.45vw;
+  color: #2F5A53;
+  margin-bottom: 1.66vw;
+}
+
+.content__training {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.trainig__container {
+  width: 35.2vw;
+  padding: 0.83vw 0 1.25vw 0;
+  background: #FBFCF7;
+  -webkit-box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+          box-shadow: 0px 0px 20px rgba(63, 64, 79, 0.1);
+  border-radius: 10px;
+  margin-bottom: 0.83vw;
+}
+
+.training__title {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25vw;
+  line-height: 1.61vw;
+  color: #1C1D25;
+  padding-left: 1.25vw;
+  margin-bottom: 0.83vw;
+}
+
+.training__line {
+  border-bottom: 0.054vw solid #c5c5c5;
+}
+
+.training__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.83vw;
+  padding-left: 1.25vw;
+  margin-bottom: 1.66vw;
+}
+
+.training__text-wrapper:nth-child(1) {
+  margin-right: 5.156vw;
+}
+
+.training__text {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.94vw;
+  line-height: 1.2vw;
+  color: #1C1D25;
+}
+
+.training__text:nth-child(2) {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  color: #8E8E92;
+}
+
+.training__fotter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.25vw;
+}
+
+.training__button {
+  text-align: center;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.83vw;
+  line-height: 2.864vw;
+  color: #FFFFFF;
+  background: #B00D23;
+  border-radius: 5px;
+  height: 2.864vw;
+  padding: 0 1.66vw;
+}
+
+.training__image {
+  position: relative;
+}
+
+.html {
+  position: absolute;
+  width: 1.30vw;
+  height: 1.56vw;
+  top: 2.44vw;
+  left: -1.15vw;
+}
+
+.backend {
+  position: absolute;
+  width: 1.77vw;
+  height: 1.97vw;
+  top: 1.97vw;
+  left: -1.51vw;
+}
+
+.training__front {
+  width: 6.25vw;
+  height: 3.8vw;
+}
+
+.training__back {
+  width: 4.8vw;
+  height: 3.8vw;
+}
+
+@media screen and (max-width: 1366px) {
+  .container {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #F7F8F3;
+  }
+  .container__content {
+    left: 20vw;
+    width: 79.43vw;
+    padding: 5.86vw 2.78vw 5.86vw 6vw;
+  }
+  .content__link {
+    font-size: 1.171vw;
+    line-height: 1.54vw;
+    padding: 0.84vw 1.757vw 0.84vw 1.757vw;
+    margin-bottom: 1.757vw;
+  }
+  .header {
+    margin-top: 3vw;
+    width: 82%;
+  }
+  .content__header {
+    margin-bottom: 3.51vw;
+  }
+  .header__title {
+    font-size: 2.63vw;
+    line-height: 3.44vw;
+    margin-right: 7.17vw;
+  }
+  .header__circle {
+    margin-top: 0.44vw;
+    width: 10.6vw;
+    height: 10.6vw;
+    padding: 0.366vw;
+  }
+  .circle__text {
+    font-size: 1.171vw;
+    line-height: 1.54vw;
+  }
+  .circle .circle__text:nth-child(2) {
+    font-size: 1.757vw;
+    line-height: 2.27vw;
+  }
+  .circle .circle__text:nth-child(3) {
+    font-size: 1.171vw;
+    line-height: 1.54vw;
+  }
+  .header__line {
+    width: 21.08vw;
+    height: 7.83vw;
+    position: absolute;
+    right: 11.34vw;
+    top: 13.54vw;
+  }
+  .header__line-img {
+    width: 100%;
+    height: 100%;
+  }
+  .content__form {
+    margin-bottom: 2.342vw;
+  }
+  .form__wrapper {
+    padding: 1.171vw 3.3vw 1.757vw 1.171vw;
+    width: 34.99vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form__title {
+    font-size: 1.32vw;
+    line-height: 1.61vw;
+    color: #1C1D25;
+    margin-bottom: 1.171vw;
+  }
+  .form__input {
+    font-size: 1.171vw;
+    line-height: 1.54vw;
+    color: #000000;
+    padding: 1.171vw;
+    width: 17.8vw;
+    margin-right: 0.59vw;
+  }
+  .form__button {
+    font-size: 1.171vw;
+    line-height: 1.54vw;
+    padding: 1.24vw 2.342vw 1.24vw 2.342vw;
+  }
+  .form__text {
+    margin-top: 1.171vw;
+    font-size: 1.02vw;
+    line-height: 1.24vw;
+    width: 90%;
+    margin-left: 0;
+  }
+  .content__advantages {
+    margin-bottom: 5.85vw;
+  }
+  .advantages__wrapper {
+    width: 22.4vw;
+    height: 8.34vw;
+    padding: 1.171vw;
+  }
+  .advantages__title {
+    font-size: 1.32vw;
+    line-height: 1.68vw;
+    margin-bottom: 1.171vw;
+  }
+  .advantages__wrapper:nth-child(3) .advantages__title {
+    margin-bottom: 0.8vw;
+  }
+  .advantages__wrapper:nth-child(3) .advantages__title span {
+    display: block;
+  }
+  .advantages__subtitle {
+    font-size: 1.02vw;
+    line-height: 1.24vw;
+  }
+  .advantages__image {
+    display: none;
+  }
+  .content__title {
+    font-size: 2.64vw;
+    line-height: 3.44vw;
+    margin-bottom: 2.342vw;
+  }
+  .trainig__container {
+    width: 34.4vw;
+    padding: 0.95vw 0 1.757vw 0;
+    margin-bottom: 1.171vw;
+  }
+  .training__title {
+    font-size: 1.757vw;
+    line-height: 2.27vw;
+    padding-left: 1.171vw;
+    margin-bottom: 1.171vw;
+  }
+  .training__line {
+    border-bottom: 0.074vw solid #c5c5c5;
+  }
+  .training__wrapper {
+    margin-top: 0.95vw;
+    padding-left: 1.171vw;
+    margin-bottom: 1.76vw;
+  }
+  .training__text-wrapper:nth-child(1) {
+    margin-right: 7.24vw;
+  }
+  .training__text {
+    font-size: 1.32vw;
+    line-height: 1.68vw;
+  }
+  .training__text:nth-child(2) {
+    font-size: 1.171vw;
+    line-height: 1.54vw;
+  }
+  .training__fotter {
+    padding: 0 1.171vw;
+  }
+  .training__button {
+    height: 4.026vw;
+    font-size: 1.171vw;
+    line-height: 1.54vw;
+    padding: 1.171vw 2.342vw 1.171vw 2.342vw;
+  }
+  .training__image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 0 0;
+  }
+  .container__content {
+    left: 0;
+    width: 100%;
+    padding: 20vw 2.22vw 15.5vw 2.22vw;
+  }
+  .content__link {
+    font-size: 4.44vw;
+    line-height: 5.83vw;
+    padding: 3.05vw 6.66vw 3.05vw 6.66vw;
+    width: 46.1vw;
+    margin-bottom: 4.44vw;
+  }
+  .header {
+    width: 100%;
+    margin-top: 9.16vw;
+  }
+  .content__header {
+    margin-bottom: 6.66vw;
+  }
+  .header__title {
+    font-size: 6.66vw;
+    line-height: 8.61vw;
+    margin-right: 0;
+  }
+  .header__circle {
+    display: none;
+  }
+  .header__line {
+    display: none;
+  }
+  .content__form {
+    margin-bottom: 6.66vw;
+  }
+  .form__wrapper {
+    padding: 4.44vw 4.44vw 6.66vw 4.44vw;
+    width: 100%;
+  }
+  .form__title {
+    font-size: 3.88vw;
+    line-height: 5vw;
+    margin-bottom: 4.44vw;
+  }
+  .form__input {
+    font-size: 3.88vw;
+    line-height: 5vw;
+    padding: 4.44vw 4.44vw 4.44vw 4.44vw;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2.22vw;
+  }
+  .form__button {
+    width: 100%;
+    font-size: 4.44vw;
+    line-height: 5.83vw;
+    padding: 3.61vw 0 3.61vw 0;
+  }
+  .form__text {
+    margin-top: 2.22vw;
+    font-size: 3.88vw;
+    line-height: 4.72vw;
+    width: 100%;
+    margin-left: 0;
+  }
+  .content__advantages {
+    margin-bottom: 15.5vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .advantages__wrapper {
+    width: 100%;
+    height: initial;
+    margin-bottom: 4.44vw;
+    padding: 4.44vw 4.44vw 6.66vw 4.44vw;
+  }
+  .advantages__title {
+    font-size: 5vw;
+    line-height: 6.38vw;
+    margin-bottom: 2.22vw;
+  }
+  .advantages__wrapper:nth-child(3) .advantages__title {
+    margin-bottom: 2.22vw;
+  }
+  .advantages__wrapper:nth-child(3) .advantages__title span {
+    display: inline;
+  }
+  .advantages__wrapper:nth-child(3) {
+    margin-bottom: 0;
+  }
+  .advantages__subtitle {
+    font-size: 3.88vw;
+    line-height: 4.72vw;
+  }
+  .content__title {
+    font-size: 6.66vw;
+    line-height: 8vw;
+    margin-bottom: 4.44vw;
+  }
+  .trainig__container {
+    width: 100%;
+    padding: 3.61vw 0 4.44vw 0;
+    margin-bottom: 4.44vw;
+  }
+  .training__title {
+    font-size: 5vw;
+    line-height: 6.38vw;
+    padding-left: 4.44vw;
+    margin-bottom: 3.61vw;
+  }
+  .training__line {
+    border-bottom: 0.27vw solid #c5c5c5;
+  }
+  .training__wrapper {
+    margin-top: 4.44vw;
+    padding-left: 4.44vw;
+    margin-bottom: 4.44vw;
+  }
+  .training__text-wrapper:nth-child(1) {
+    margin-right: 15.5vw;
+  }
+  .training__text {
+    font-size: 4.44vw;
+    line-height: 5.83vw;
+  }
+  .training__text:nth-child(2) {
+    font-size: 3.88vw;
+    line-height: 5vw;
+  }
+  .training__fotter {
+    padding: 0 4.44vw 0 4.44vw;
+  }
+  .training__button {
+    width: 100%;
+    height: 15.27vw;
+    font-size: 4.44vw;
+    line-height: 5.83vw;
+    padding: 4.44vw 0 4.44vw 0;
+  }
+  .training__image {
+    display: none;
+  }
+}

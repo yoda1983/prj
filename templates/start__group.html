@@ -1,0 +1,268 @@
+{% extends 'main.html' %}
+{% load static %}
+
+    {% block title %}
+    <title>
+        Записаться на курсы по программированию. Онлайн, офлайн курсы на базе ITEC.
+    </title>
+    {% endblock %}
+    {% block meta %}
+    <meta name="description" content="Записаться на курсы по программированию - HTML, CSS, JavaScript, REACT, Python, Jango, Backend, NodeJS | Тел +375 (29)639-11-19 | Начни зарабатывать с 3 месяца обучения в ITEC.">
+    <meta name="keywords" content="Курсы программирования, программирование онлайн, обучение HTML, курс javascript, курс Python">
+    {% endblock %}
+    {% block css %}
+    <link rel="icon" href="{% static 'img/start__course_white.svg' %}">
+    <link rel="stylesheet" href="{% static 'css/menu_for_start_group.css' %}">
+    <link rel="stylesheet" href="{% static 'css/start__group.css' %}">
+    <link rel="stylesheet" href="{% static 'css/form__application.css' %}">
+    {% endblock %}
+
+    {% block content %}
+    <div class="start-group" id="content">
+        <h1 class="start-group__title">
+            Ближайшие старты групп
+        </h1>
+        {% for i in obj|dictsort:'id_position' %}
+        <div class="start-group__course">
+            <h2 class="course__text">
+                {{ i.name_specialization }}
+            </h2>
+        </div>
+        <div class="start-group__container">
+            {% for name_spec in i.spec.all  %}
+
+            {% for item in name_spec.add_course.all|dictsort:'set_is_over'|slice:'1' %}
+            <div class="start-group__about">
+                <h3 class="about__title">
+                    {{name_spec.name_courses}}
+                </h3>
+                <div class="about__subtitle">
+                    Количество мест со скидкой ограничено!
+                </div>
+                <button class="about__button">
+                    Забронировать место со скидкой
+                </button>
+                <div class="about__info">
+                    <div class="info__wrapper">
+                        <div class="info__text">
+                            Старт обучения
+                        </div>
+                        <div class="info__text-title">
+                            {{item.data_begins|date:'j E'}}
+                        </div>
+                        <div class="info__text">
+                            Дни проведения занятий
+                        </div>
+                        <div class="info__text-title">
+                            {% for days in item.day_start.all %}
+                            {% if forloop.last %}
+                            <span class="info__text-title-date">{{ days.day }}</span>
+                            {% else %}
+                            <span class="info__text-title-date">{{ days.day}},</span>
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                        <div class="info__text info__text-line">
+                            {{name_spec.cross_cost|floatformat:"0"}} BYN
+                        </div>
+                        <div class="info__text-title">
+                            <span>{{name_spec.cost|floatformat:"0"}} BYN</span>
+                        </div>
+                        <div class="info__text">
+                            В месяц <span>{{name_spec.cost_in_month}} BYN</span>
+                        </div>
+                    </div>
+                    <div class="info__wrapper">
+                        <div class="info__text">
+                            Осталось мест
+                        </div>
+                        <div class="info__text-title">
+                            {{item.not_blocked}} из {{item.quantity_place}}
+                        </div>
+                        <div class="info__text">
+                            Время проведения занятий
+                        </div>
+                        <div class="info__text-title">
+                            {% for days in item.day_start.all|slice:'1' %}
+                            {{days.lesson_start}}
+                            {% endfor %}
+                        </div>
+                        <div class="info__text">
+                            Длительность
+                        </div>
+                        <div class="info__text-title">
+                            {{name_spec.quantity_lesson}} месяцев
+                        </div>
+                    </div>
+                </div>
+                <div class="about__line">
+
+                </div>
+                <div class="about__footer">
+                    <div class="footer__text">
+                        Курс — Английский в IT
+                    </div>
+                    <div class="footer__text">
+                        Скидка 50%
+                    </div>
+                    <div class="footer__text">
+                        Выгода 85 BYN
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% endfor %}
+            </div>
+            {% endfor %}
+            <div class="star-group__english">
+                <h3 class="english__title">
+                    Английский в IT
+                </h3>
+                <div class="english-start__wrapper">
+                    <div class="english__wrapper">
+                        <div class="english__text-wrapper">
+                            <div class="english__text">
+                                Старт обучения
+                            </div>
+                            <div class="english__text-bold">
+                                15 февраля
+                            </div>
+                        </div>
+                        <div class="english__text-wrapper">
+                            <div class="english__text">
+                                Длительность
+                            </div>
+                            <div class="english__text-bold">
+                                4 месяца
+                            </div>
+                        </div>
+                        <div class="english__text-wrapper">
+                            <div class="english__text">
+                                Дни проведения занятий
+                            </div>
+                            <div class="english__text-bold">
+                                Вторник, Четверг
+                            </div>
+                        </div>
+                        <div class="english__text-wrapper">
+                            <div class="english__text">
+                                Осталось мест
+                            </div>
+                            <div class="english__text-bold">
+                                7 из 10
+                            </div>
+                        </div>
+                        <div class="english__text-wrapper">
+                            <div class="english__text">
+                                Стоимость курса
+                            </div>
+                            <div class="english__text-bold">
+                                <span>170 BYN</span>
+                            </div>
+                            <div class="english__text">
+                                В месяц <span>240 BYN</span>
+                            </div>
+                        </div>
+                        <div class="english__text-wrapper">
+                            <div class="english__text">
+                                Время проведения занятий
+                            </div>
+                            <div class="english__text-bold">
+                                18.00 - 20.00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="english__button-wrapper">
+                        <button class="english__button">
+                            Забронировать место
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="star-group__english-mobile">
+                <div class="english__title-mobile">
+                    Английский в IT
+                </div>
+                <button class="english__button-mobile">
+                    Забронировать место
+                </button>
+                <div class="english__wrapper-mobile">
+                    <div class="english__text-wrapper-mobile">
+                        <div class="english__text-mobile">
+                            Старт обучения
+                        </div>
+                        <div class="english__text-bold-mobile">
+                            15 февраля
+                        </div>
+                        <div class="english__text-mobile">
+                            Дни проведения занятий
+                        </div>
+                        <div class="english__text-bold-mobile">
+                            Вторник,
+                            <span class="english__text-bold-mobile-span">Четверг</span>
+                        </div>
+                        <div class="english__text-mobile">
+                            Стоимость курса
+                        </div>
+                        <div class="english__text-bold-mobile">
+                            <span>170 BYN</span>
+                        </div>
+                        <div class="english__text-mobile">
+                            В месяц <span>320 BYN</span>
+                        </div>
+                    </div>
+                    <div class="english__text-wrapper-mobile">
+                        <div class="english__text-mobile">
+                            Осталось мест
+                        </div>
+                        <div class="english__text-bold-mobile">
+                            7 из 10
+                        </div>
+                        <div class="english__text-mobile">
+                            Время проведения занятий
+                        </div>
+                        <div class="english__text-bold-mobile english__text-bold-mobile-margin">
+                            18.00 - 20.00
+                        </div>
+                        <div class="english__text-mobile">
+                            Длительность
+                        </div>
+                        <div class="english__text-bold-mobile">
+                            5 месяцев
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container__form-application" id="form_app">
+            <div class="form-application__block">
+                <div class="form-application__cross">
+                    <img src="{% static 'img/cross.svg' %}" alt="" class="form-application__cross-img">
+                </div>
+                <div class="form-application__image">
+                    <img src="{% static 'img/form__image-application.svg' %}" alt="" class="form-application__img">
+                </div>
+                <div class="form-application__text-wrapper">
+                    <div class="form-application__text">
+                        Заявка на курс
+                    </div>
+                    <div class="form-application__name-course">
+                        "Название курса"
+                    </div>
+                </div>
+                <form action="{% url 'app_roma:near_groups' %}" method="POST">
+                    {% include 'form_course.html' %}
+                    <div class="form-application__form-wrapper">
+
+                        <button class="form-application__button">
+                            Оставить заявку
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        {% endblock %}
+
+    {% block script %}
+    <script src="{% static 'js/form_application_for_start_group.js' %}"></script>
+    {% endblock %}
